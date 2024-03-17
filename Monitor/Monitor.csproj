@@ -153,5 +153,17 @@
   <ItemGroup>
     <None Include="Resources\pictureBox2.Image3.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Chapter\Assasin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Chapter\None.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Chapter\Warrior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main_Chapter\Wizzard.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

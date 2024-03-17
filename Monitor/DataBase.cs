@@ -76,7 +76,10 @@ namespace Monitor
                 AttackEnemy = 30;
             }
         }
-        public static string PicWarrior = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Desktop_240310_1227-Photoroom.png-Photoroom.png";
+        //public static string PicWarrior = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Warrior.png";
+
+        public static string PicWarrior = "Warrior";
+
         /// Assasin
         public static void Assasin()
         {
@@ -108,7 +111,10 @@ namespace Monitor
                 AttackEnemy = 35;
             }
         }
-        public static string PicAssasin = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Desktop_240310_1228-Photoroom.png-Photoroom.png";
+        //public static string PicAssasin = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Assasin.png";
+
+        public static string PicAssasin = "Assasin";
+
         ///Wizard
         public static void Wizard()
         {
@@ -140,7 +146,11 @@ namespace Monitor
                 AttackEnemy = 20;
             }
         }
-        public static string PicWizzard = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Desktop_240310_1229-Photoroom.png-Photoroom.png";
+        //public static string PicWizzard = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Wizzard.png";
+
+        public static string PicWizzard = "Wizzard";
+
+
         ///None
         public static void None()
         {
@@ -172,7 +182,10 @@ namespace Monitor
                 AttackEnemy = 25;
             }
         }
-        public static string PicNone = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Desktop_240310_1229_1-Photoroom.png-Photoroom.png";
+        //public static string PicNone = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\None.png";
+
+        public static string PicNone = "None";
+
         #endregion
 
         #region Selected Character

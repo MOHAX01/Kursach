@@ -17,11 +17,15 @@ namespace Monitor
     public partial class Form1 : Form
     {
         public Random random = new Random();
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
         public Form1()
         {
             
             InitializeComponent();
-            pictureBox3.Image = Image.FromFile(DataBase.PicCharapter);
+           
+            pictureBox3.Image = ((Image)(resources.GetObject(DataBase.PicCharapter)));
+            
+            //pictureBox3.Image = Image.FromFile(DataBase.PicCharapter);
             pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
             label1.Text = Convert.ToString(DataBase.HPCharacter);
             label2.Text = Convert.ToString(DataBase.HPEnemy);
@@ -55,7 +59,7 @@ namespace Monitor
 
             }
         }
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+        
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
