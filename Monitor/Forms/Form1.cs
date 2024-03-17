@@ -24,9 +24,10 @@ namespace Monitor
             InitializeComponent();
            
             pictureBox3.Image = ((Image)(resources.GetObject(DataBase.PicCharapter)));
+            pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
             
             //pictureBox3.Image = Image.FromFile(DataBase.PicCharapter);
-            pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+            //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
             label1.Text = Convert.ToString(DataBase.HPCharacter);
             label2.Text = Convert.ToString(DataBase.HPEnemy);
             if (Convert.ToInt32(label1.Text) > 0)
@@ -205,23 +206,31 @@ namespace Monitor
                 switch (v)
                 {
                     case 1: 
-                        this.BackgroundImage = Image.FromFile(DataBase.BackEasy1);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy1);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy1)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 2:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackEasy2);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy2);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy2)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 3:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackEasy3);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy3);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy3)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 4:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackEasy4);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy4);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy4)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                 }
@@ -232,28 +241,38 @@ namespace Monitor
                 switch (v)
                 {
                     case 1:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackNorm1);
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm1);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm1)));
                         pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 2:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackNorm2);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm2);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm2)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 3:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackNorm3);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm3);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm3)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 4:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackNorm4);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm4);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm4)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 5:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackNorm5);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm5);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm5)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                 }
@@ -264,33 +283,45 @@ namespace Monitor
                 switch (v)
                 {
                     case 1:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackHard1);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard1);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard1)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 2:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackHard2);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard2);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard2)));
+                        // pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 3:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackHard3);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard3);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard3)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 4:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackHard4);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard4);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard4)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 5:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackHard5);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard5);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard5)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                     case 6:
-                        this.BackgroundImage = Image.FromFile(DataBase.BackHard6);
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard6);
+                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard6)));
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;
                 }

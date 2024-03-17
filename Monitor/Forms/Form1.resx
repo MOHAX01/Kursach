@@ -4244,4 +4244,100 @@
   <data name="Wizzard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Main_Chapter\Wizzard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Easy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Easy\Easy1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Easy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Easy\Easy2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Easy3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Easy\Easy3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Easy4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Easy\Easy4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enemy9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Enemy\Enemy9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Normal\Normal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Normal\Normal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Normal\Normal3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Normal\Normal4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Normal5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Normal\Normal5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

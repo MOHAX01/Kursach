@@ -165,5 +165,101 @@
   <ItemGroup>
     <None Include="Resources\Main_Chapter\Wizzard.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy\Easy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy\Easy2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy\Easy3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy\Easy4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal\Normal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal\Normal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal\Normal3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal\Normal4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal\Normal5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

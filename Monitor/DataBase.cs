@@ -20,32 +20,50 @@ namespace Monitor
         #region Backgrounds
 
         ///   Easy
-        public static string BackEasy1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\vecteezy_african-desert-landscape-background-for-game_12746791.jpg";
-        public static string BackEasy2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\vecteezy_cartoon-nature-landscape-summer-evening-forest_12816545.jpg";
-        public static string BackEasy3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\vecteezy_forest-game-background_.jpg";
-        public static string BackEasy4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\vecteezy_purple-alien-space-planet-game-cartoon-background_23869659.jpg";
+        //public static string BackEasy1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy1.jpg";
+        //public static string BackEasy2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy2.jpg";
+        //public static string BackEasy3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy3.jpg";
+        //public static string BackEasy4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy4.jpg";
+
+        public static string BackEasy1 = "Easy1";
+        public static string BackEasy2 = "Easy2";
+        public static string BackEasy3 = "Easy3";
+        public static string BackEasy4 = "Easy4";
 
         /// Noramal
-        public static string BackNorm1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\hills2.png";
-        public static string BackNorm2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\hills3.png";
-        public static string BackNorm3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\trees.png";
-        public static string BackNorm4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\trees3.png";
-        public static string BackNorm5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\illustration2.png";
+        //public static string BackNorm1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal1.png";
+        //public static string BackNorm2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal2.png";
+        //public static string BackNorm3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal3.png";
+        //public static string BackNorm4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal4.png";
+        //public static string BackNorm5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal5.png";
+
+        public static string BackNorm1 = "Normal1";
+        public static string BackNorm2 = "Normal2";
+        public static string BackNorm3 = "Normal3";
+        public static string BackNorm4 = "Normal4";
+        public static string BackNorm5 = "Normal5";
 
         /// Hard
-        public static string BackHard1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\vecteezy_2d-hero-battle-pvp-arena-background-casual-game-art-design_26843980.jpg";
-        public static string BackHard2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\vecteezy_2d-hero-battle-pvp-arena-background-casual-game-art-design_30606313.jpg";
-        public static string BackHard3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\vecteezy_2d-hero-battle-pvp-arena-background-casual-game-art-design_30606321.jpg";
-        public static string BackHard4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\vecteezy_2d-hero-battle-pvp-arena-background-casual-game-art-design_31688145.jpg";
-        public static string BackHard5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\vecteezy_2d-hero-battle-pvp-arena-background-casual-game-art-design_31688148.jpg";
-        public static string BackHard6 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\vecteezy_2d-hero-battle-pvp-arena-background-casual-game-art-design_31688151.jpg";
+        //public static string BackHard1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard1.jpg";
+        //public static string BackHard2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard2.jpg";
+        //public static string BackHard3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard3.jpg";
+        //public static string BackHard4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard4.jpg";
+        //public static string BackHard5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard5.jpg";
+        //public static string BackHard6 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard6.jpg";
+
+        public static string BackHard1 = "Hard1";
+        public static string BackHard2 = "Hard2";
+        public static string BackHard3 = "Hard3";
+        public static string BackHard4 = "Hard4";
+        public static string BackHard5 = "Hard5";
+        public static string BackHard6 = "Hard6";
 
         #endregion
 
         #region Persons
-        
+
         /// Warrior
-        
+
         public static void Warrior()
         {
             if (Dificult == 1)
@@ -203,29 +221,53 @@ namespace Monitor
         public static int AttackEnemy;
         public static int KillEnemy;
         /// Pics
-        public static string PicEnemy1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy1.png";
-        public static string PicEnemy2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy2.png";
-        public static string PicEnemy3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy3.png";
-        public static string PicEnemy4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy4.png";
-        public static string PicEnemy5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy5.png";
-        public static string PicEnemy6 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy6.png";
-        public static string PicEnemy7 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy7.png";
-        public static string PicEnemy8 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy8.png";
-        public static string PicEnemy9 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy9.png";
-        public static string PicEnemy10 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy10.png";
-        public static string PicEnemy11 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy11.png";
-        public static string PicEnemy12 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy12.png";
-        public static string PicEnemy13 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy13.png";
-        public static string PicEnemy14 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy14.png";
-        public static string PicEnemy15 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy15.png";
-        public static string PicEnemy16 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy16.png";
-        public static string PicEnemy17 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy17.png";
-        public static string PicEnemy18 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy18.png";
-        public static string PicEnemy19 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy19.png";
-        public static string PicEnemy20 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy20.png";
-        public static string PicEnemy21 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy21.png";
-        public static string PicEnemy22 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy22.png";
-        public static string PicEnemy23 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy23.png";
+        //public static string PicEnemy1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy1.png";
+        //public static string PicEnemy2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy2.png";
+        //public static string PicEnemy3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy3.png";
+        //public static string PicEnemy4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy4.png";
+        //public static string PicEnemy5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy5.png";
+        //public static string PicEnemy6 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy6.png";
+        //public static string PicEnemy7 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy7.png";
+        //public static string PicEnemy8 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy8.png";
+        //public static string PicEnemy9 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy9.png";
+        //public static string PicEnemy10 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy10.png";
+        //public static string PicEnemy11 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy11.png";
+        //public static string PicEnemy12 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy12.png";
+        //public static string PicEnemy13 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy13.png";
+        //public static string PicEnemy14 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy14.png";
+        //public static string PicEnemy15 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy15.png";
+        //public static string PicEnemy16 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy16.png";
+        //public static string PicEnemy17 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy17.png";
+        //public static string PicEnemy18 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy18.png";
+        //public static string PicEnemy19 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy19.png";
+        //public static string PicEnemy20 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy20.png";
+        //public static string PicEnemy21 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy21.png";
+        //public static string PicEnemy22 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy22.png";
+        //public static string PicEnemy23 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy23.png";
+
+        public static string PicEnemy1 = "Enemy1";
+        public static string PicEnemy2 = "Enemy2";
+        public static string PicEnemy3 = "Enemy3";
+        public static string PicEnemy4 = "Enemy4";
+        public static string PicEnemy5 = "Enemy5";
+        public static string PicEnemy6 = "Enemy6";
+        public static string PicEnemy7 = "Enemy7";
+        public static string PicEnemy8 = "Enemy8";
+        public static string PicEnemy9 = "Enemy9";
+        public static string PicEnemy10 = "Enemy10";
+        public static string PicEnemy11 = "Enemy11";
+        public static string PicEnemy12 = "Enemy12";
+        public static string PicEnemy13 = "Enemy13";
+        public static string PicEnemy14 = "Enemy14";
+        public static string PicEnemy15 = "Enemy15";
+        public static string PicEnemy16 = "Enemy16";
+        public static string PicEnemy17 = "Enemy17";
+        public static string PicEnemy18 = "Enemy18";
+        public static string PicEnemy19 = "Enemy19";
+        public static string PicEnemy20 = "Enemy20";
+        public static string PicEnemy21 = "Enemy21";
+        public static string PicEnemy22 = "Enemy22";
+        public static string PicEnemy23 = "Enemy23";
 
         public static string SelectEnemy()
         {
