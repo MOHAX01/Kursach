@@ -14,11 +14,11 @@ using Monitor.Forms;
 
 namespace Monitor
 {
-    public partial class Form1 : Form
+    public partial class MainGame : Form
     {
         public Random random = new Random();
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-        public Form1()
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGame));
+        public MainGame()
         {
             
             InitializeComponent();
@@ -243,7 +243,7 @@ namespace Monitor
                     case 1:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm1)));
-                        pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
+                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         break;

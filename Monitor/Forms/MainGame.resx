@@ -4235,15 +4235,6 @@
   <data name="Assasin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Main_Chapter\Assasin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="None" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Main_Chapter\None.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Main_Chapter\Warrior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wizzard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Main_Chapter\Wizzard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Easy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Easy\Easy1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4325,6 +4316,27 @@
   <data name="Enemy9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enemy\Enemy9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Hard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hard\Hard1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hard2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hard\Hard2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hard3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hard\Hard3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hard4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hard\Hard4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hard5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hard\Hard5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hard6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hard\Hard6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="None" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Main_Chapter\None.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Normal\Normal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -4339,5 +4351,11 @@
   </data>
   <data name="Normal5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Normal\Normal5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Main_Chapter\Warrior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizzard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Main_Chapter\Wizzard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

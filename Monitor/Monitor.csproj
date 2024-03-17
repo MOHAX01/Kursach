@@ -68,11 +68,16 @@
       <DependentUpon>Change_Dif.cs</DependentUpon>
     </Compile>
     <Compile Include="Animatio\FlatColors.cs" />
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\MainGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\MainGame.Designer.cs">
+      <DependentUpon>MainGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainGame1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainGame.resx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Game_result.cs">
       <SubType>Form</SubType>
@@ -94,8 +99,10 @@
     <EmbeddedResource Include="Forms\Change_Dif.resx">
       <DependentUpon>Change_Dif.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MainGame.resx">
+      <DependentUpon>MainGame.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainGame1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Game_result.resx">
       <DependentUpon>Game_result.cs</DependentUpon>
@@ -260,6 +267,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Normal\Normal5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard\Hard1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard\Hard2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard\Hard3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard\Hard4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard\Hard5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard\Hard6.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

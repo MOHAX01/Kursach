@@ -82,7 +82,7 @@ namespace Monitor.Forms
 
 
             this.Hide();
-            Form1 Window = new Form1();
+            MainGame Window = new MainGame();
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -94,7 +94,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicAssasin;
 
             this.Hide();
-            Form1 Window = new Form1();
+            MainGame Window = new MainGame();
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -106,7 +106,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicWizzard;
 
             this.Hide();
-            Form1 Window = new Form1();
+            MainGame Window = new MainGame();
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -118,7 +118,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicNone;
 
             this.Hide();
-            Form1 Window = new Form1();
+            MainGame Window = new MainGame();
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
