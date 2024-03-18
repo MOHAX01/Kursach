@@ -342,17 +342,18 @@ namespace Monitor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(button1.Text == Convert.ToString(DataBase.CorrectAnswer))
+            if (button1.Text == Convert.ToString(DataBase.CorrectAnswer))
             {
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
+                DataBase.HPEnemy= Convert.ToInt32(label2.Text);
                 DataBase.Score += DataBase.Dificult;
-                progressBar1.Step += 10;
+                progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
             }
             else
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
                 DataBase.HPCharacter -= DataBase.AttackEnemy;
-                progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
+                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
             }
             chlen();
         }
@@ -362,14 +363,15 @@ namespace Monitor
             if (button2.Text == Convert.ToString(DataBase.CorrectAnswer))
             {
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
+                DataBase.HPEnemy = Convert.ToInt32(label2.Text);
                 DataBase.Score += DataBase.Dificult;
-                progressBar1.Step += 10;
+                progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
             }
             else
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
                 DataBase.HPCharacter -= DataBase.AttackEnemy;
-                progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
+                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
             }
             chlen();
         }
@@ -379,14 +381,15 @@ namespace Monitor
             if (button3.Text == Convert.ToString(DataBase.CorrectAnswer))
             {
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
+                DataBase.HPEnemy = Convert.ToInt32(label2.Text);
                 DataBase.Score += DataBase.Dificult;
-                
+                progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
             }
             else
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
                 DataBase.HPCharacter -= DataBase.AttackEnemy;
-                progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
+                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
             }
 
             chlen();
@@ -399,9 +402,9 @@ namespace Monitor
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy/2));
-            DataBase.HPCharacter -= DataBase.AttackEnemy/2;
-            progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
+            label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy / 2));
+            DataBase.HPCharacter -= DataBase.AttackEnemy / 2;
+            progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
 
             chlen();
         }

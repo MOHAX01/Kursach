@@ -79,7 +79,7 @@ namespace Monitor.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             DataBase.PicCharapter = DataBase.PicWarrior;
-
+            DataBase.Warrior();
 
             this.Hide();
             MainGame Window = new MainGame();
@@ -92,6 +92,7 @@ namespace Monitor.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             DataBase.PicCharapter = DataBase.PicAssasin;
+            DataBase.Assasin();
 
             this.Hide();
             MainGame Window = new MainGame();
@@ -104,6 +105,7 @@ namespace Monitor.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             DataBase.PicCharapter = DataBase.PicWizzard;
+            DataBase.Wizard();
 
             this.Hide();
             MainGame Window = new MainGame();
@@ -116,6 +118,7 @@ namespace Monitor.Forms
         private void button4_Click(object sender, EventArgs e)
         {
             DataBase.PicCharapter = DataBase.PicNone;
+            DataBase.None();
 
             this.Hide();
             MainGame Window = new MainGame();
