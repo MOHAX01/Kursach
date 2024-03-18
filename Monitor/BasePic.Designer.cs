@@ -403,9 +403,29 @@ namespace Monitor {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Lose {
+            get {
+                object obj = ResourceManager.GetObject("Lose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap None {
             get {
                 object obj = ResourceManager.GetObject("None", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NonePic {
+            get {
+                object obj = ResourceManager.GetObject("NonePic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +486,16 @@ namespace Monitor {
         public static System.Drawing.Bitmap Warrior {
             get {
                 object obj = ResourceManager.GetObject("Warrior", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Win {
+            get {
+                object obj = ResourceManager.GetObject("Win", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

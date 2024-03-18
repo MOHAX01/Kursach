@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MathGen;
 using Monitor.Forms;
+using System.Diagnostics.Tracing;
 
 namespace Monitor
 {
@@ -20,30 +21,31 @@ namespace Monitor
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasePic));
         public MainGame()
         {
-            
+
             InitializeComponent();
-           
+
             pictureBox3.Image = ((Image)(resources.GetObject(DataBase.PicCharapter)));
             pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
-            
+            DataBase.Timer();
             //pictureBox3.Image = Image.FromFile(DataBase.PicCharapter);
             //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
             label1.Text = Convert.ToString(DataBase.HPCharacter);
             label2.Text = Convert.ToString(DataBase.HPEnemy);
-            
             timer1 = new Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Interval = 500;
+            timer1.Interval = 1000;
             if (Convert.ToInt32(label1.Text) > 0)
             {
                 ChangeBackground();
                 chlen();
             }
-            DataBase.Timer();
+
+
         }
-        
-        int startValue=DataBase.Time;
-        
+
+        int startValue = DataBase.Time;
+        int statusValue = 0;
+
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -52,7 +54,7 @@ namespace Monitor
 
             Menu menuWindow = new Menu();
             menuWindow.Show();
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -69,7 +71,7 @@ namespace Monitor
 
             }
         }
-        
+
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
@@ -80,63 +82,9 @@ namespace Monitor
 
         }
 
-        //private void pictureBox8_MouseClick(object sender, MouseEventArgs e)
-        //{
-        //    back = '1';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image"+back)));
-        //}
-        //private void pictureBox8_Click(object sender, EventArgs e)
-        //{
-        //    back = '1';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image" + back)));
-        //}
-
-        //private void pictureBox9_Click(object sender, EventArgs e)
-        //{
-        //    back = '2';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image" + back)));
-        //}
-
-        //private void pictureBox9_MouseClick(object sender, MouseEventArgs e)
-        //{
-        //    back = '2';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image" + back)));
-        //}
-
-        //private void pictureBox10_Click(object sender, EventArgs e)
-        //{
-        //    back = '3';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image" + back)));
-        //}
-        //private void pictureBox10_MouseClick(object sender, EventArgs e)
-        //{
-        //    back = '3';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image" + back)));
-        //}
-
-        //private void pictureBox11_Click(object sender, EventArgs e)
-        //{
-        //    back = '4';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image" + back)));
-        //}
-
-        //private void pictureBox11_MouseClick(object sender, MouseEventArgs e)
-        //{
-        //    back = '4';
-        //    this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage" + back)));
-        //    this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image" + back)));
-        //}
-        
-
         public void chlen()
         {
+
             startValue = DataBase.Time;
             int correctAnswer;
             int InCorrectAnswer1;
@@ -195,6 +143,7 @@ namespace Monitor
             }
             else if (Convert.ToInt32(label1.Text) > 0)
             {
+                statusValue = 2;
                 ChangeBackground();
                 chlen();
             }
@@ -205,7 +154,7 @@ namespace Monitor
                 this.Hide();
                 Game_result win = new Game_result();
                 win.Show();
-                
+
             }
         }
 
@@ -216,7 +165,7 @@ namespace Monitor
                 int v = random.Next(0, 4);
                 switch (v)
                 {
-                    case 1: 
+                    case 1:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy1)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
@@ -360,7 +309,7 @@ namespace Monitor
             if (button1.Text == Convert.ToString(DataBase.CorrectAnswer))
             {
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
-                DataBase.HPEnemy= Convert.ToInt32(label2.Text);
+                DataBase.HPEnemy = Convert.ToInt32(label2.Text);
                 DataBase.Score += DataBase.Dificult;
                 progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
             }
@@ -426,21 +375,32 @@ namespace Monitor
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(startValue != 0)
+            if (startValue != 0 && statusValue == 0)
             {
                 label5.Text = startValue.ToString();
                 startValue--;
             }
             else
             {
-                label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
-                chlen();
+                if (statusValue == 0 && startValue == 0)
+                {
+                    label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                    chlen();
+                }
+                else
+                {
+                    if (statusValue > 0)
+                    {
+                        pictureBox8.Image = (Image)(resources.GetObject("Win"));
+                        statusValue--;
+                    }
+                    else
+                    {
+                        pictureBox8.Image = (Image)(resources.GetObject("NonePic"));
+                        chlen();
+                    }
+                }
             }
         }
     }
-
-
-
-
-
 }

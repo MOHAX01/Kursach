@@ -36,7 +36,6 @@ namespace Monitor
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGame));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -45,17 +44,19 @@ namespace Monitor
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label5 = new System.Windows.Forms.Label();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.label3 = new System.Windows.Forms.Label();
             this.button4 = new Monitor.Button();
             this.button3 = new Monitor.Button();
             this.button2 = new Monitor.Button();
             this.button1 = new Monitor.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -65,6 +66,7 @@ namespace Monitor
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -81,23 +83,6 @@ namespace Monitor
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.CausesValidation = false;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
-            this.label3.Location = new System.Drawing.Point(394, 80);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(375, 41);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "label3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.UseMnemonic = false;
             // 
             // label4
             // 
@@ -122,7 +107,7 @@ namespace Monitor
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(93, 286);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 280);
             this.panel2.TabIndex = 18;
@@ -131,7 +116,7 @@ namespace Monitor
             // 
             this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.progressBar1.Location = new System.Drawing.Point(33, 253);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(145, 19);
             this.progressBar1.TabIndex = 12;
@@ -180,7 +165,7 @@ namespace Monitor
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(19, 9);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(179, 148);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,10 +182,20 @@ namespace Monitor
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Location = new System.Drawing.Point(800, 286);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(231, 280);
             this.panel3.TabIndex = 19;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.progressBar2.Location = new System.Drawing.Point(29, 253);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(2);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(144, 23);
+            this.progressBar2.TabIndex = 15;
+            this.progressBar2.Value = 100;
             // 
             // label2
             // 
@@ -266,22 +261,29 @@ namespace Monitor
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Silver;
             this.label5.Font = new System.Drawing.Font("Georgia", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(522, 188);
+            this.label5.Location = new System.Drawing.Point(18, 68);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 41);
-            this.label5.TabIndex = 21;
+            this.label5.TabIndex = 24;
             this.label5.Text = "label5";
             // 
-            // progressBar2
+            // label3
             // 
-            this.progressBar2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.progressBar2.Location = new System.Drawing.Point(29, 253);
-            this.progressBar2.Margin = new System.Windows.Forms.Padding(2);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(144, 23);
-            this.progressBar2.TabIndex = 15;
-            this.progressBar2.Value = 100;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.BackColor = System.Drawing.Color.Silver;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.CausesValidation = false;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
+            this.label3.Location = new System.Drawing.Point(395, 69);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(375, 41);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "label3";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.UseMnemonic = false;
             // 
             // button4
             // 
@@ -342,6 +344,17 @@ namespace Monitor
             this.button1.Text = "button1";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Location = new System.Drawing.Point(451, 113);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(237, 184);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 25;
+            this.pictureBox8.TabStop = false;
+            // 
             // MainGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -349,7 +362,9 @@ namespace Monitor
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1111, 631);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -357,7 +372,6 @@ namespace Monitor
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "MainGame";
@@ -377,6 +391,7 @@ namespace Monitor
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,7 +399,6 @@ namespace Monitor
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
         private Button button1;
         private Button button2;
         private Button button3;
@@ -402,8 +416,10 @@ namespace Monitor
         private Button button4;
         private ProgressBar progressBar1;
         private Timer timer1;
-        private Label label5;
         private ProgressBar progressBar2;
+        private Label label5;
+        private Label label3;
+        private PictureBox pictureBox8;
     }
 }
 
