@@ -19,9 +19,9 @@ namespace Monitor
 
         public static void Timer()
         {
-            if (Dificult == 1) Time = 5;
-            if (Dificult == 2) Time = 10;
-            if (Dificult == 3) Time = 15;
+            if (Dificult == 1) Time = 10;
+            if (Dificult == 2) Time = 15;
+            if (Dificult == 3) Time = 20;
         }
 
         #endregion

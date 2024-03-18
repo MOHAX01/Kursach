@@ -222,6 +222,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 2:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy2);
@@ -229,6 +230,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 3:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy3);
@@ -236,6 +238,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 4:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy4);
@@ -243,6 +246,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                 }
             }
@@ -257,6 +261,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 2:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm2);
@@ -264,6 +269,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 3:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm3);
@@ -271,6 +277,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 4:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm4);
@@ -278,6 +285,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 5:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm5);
@@ -285,6 +293,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                 }
             }
@@ -299,6 +308,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 2:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard2);
@@ -306,6 +316,7 @@ namespace Monitor
                         // pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 3:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard3);
@@ -313,6 +324,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 4:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard4);
@@ -320,6 +332,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 5:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard5);
@@ -327,6 +340,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                     case 6:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard6);
@@ -334,6 +348,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        progressBar2.Value = 100;
                         break;
                 }
             }
