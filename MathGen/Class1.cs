@@ -18,10 +18,10 @@ namespace MathGen
             int flag;
             exem="";
 
-            double num1 = random.Next(-5, 10); // Генерация случайного числа от 1 до 10
-            double num2 = random.Next(-5, 10);
-            double num3 = random.Next(-5, 15);
-            double num4 = random.Next(-5, 20);
+            int num1 = random.Next(-5, 10); // Генерация случайного числа от 1 до 10
+            int num2 = random.Next(-5, 10);
+            int num3 = random.Next(-5, 15);
+            int num4 = random.Next(-5, 20);
 
             char operation1 = GetRandomOperation(num1, num2);
             int FlagOperation = 0;
@@ -34,7 +34,7 @@ namespace MathGen
             char operation2;
             if (FlagOperation == 1)
             {
-                double res1 = Calculate(num1, num2, operation1);
+                int res1 = Calculate(num1, num2, operation1);
                 operation2 = GetRandomOperation(res1, num3);
             }
             else operation2 = GetRandomOperation(num2, num3);
@@ -43,15 +43,19 @@ namespace MathGen
             char operation3;
             if (operation2 == '*' || operation2 == '/')
             {
-                double res1 = Calculate(num2, num3, operation2);
+                int res1 = Calculate(num2, num3, operation2);
                 operation3 = GetRandomOperation(res1, num4);
             }
             else operation3 = GetRandomOperation(num3, num4);
             if (operation3 == '/' && num4 == 0) num4++;
             flag = 1;
 
+
+
+
             if (num2 <= -1) exem += $"{num1} {operation1} ({num2})";
             else exem += $"{num1} {operation1} {num2}";
+            
             if (dificult >= 2)
             {
                 if (num3 <= -1) exem += $" {operation2} ({num3})";
@@ -118,12 +122,20 @@ namespace MathGen
             //}
         }
 
-        private char GetRandomOperation(double num1, double num2)
+        private char GetRandomOperation(int num1, int num2)
         {
-            if (num1 % num2 == 0)
+            if (num2 != 0)
             {
-                char[] operations = { '+', '-', '*', '/' };
-                return operations[random.Next(operations.Length)];
+                if (num1 % num2 == 0)
+                {
+                    char[] operations = { '+', '-', '*', '/' };
+                    return operations[random.Next(operations.Length)];
+                }
+                else
+                {
+                    char[] operations = { '+', '-', '*' };
+                    return operations[random.Next(operations.Length)];
+                }
             }
             else
             {
@@ -132,9 +144,9 @@ namespace MathGen
             }
         }
 
-        private int CalculateAnswerWithPriority(double num1, double num2, double num3, double num4, char operation1, char operation2, char operation3, int flag)
+        private int CalculateAnswerWithPriority(int num1, int num2, int num3, int num4, char operation1, char operation2, char operation3, int flag)
         {
-            double result1, result2, result3;
+            int result1, result2, result3;
 
             // Приоритет умножения/деления
             if (flag == 1)      // 1 use
@@ -145,15 +157,15 @@ namespace MathGen
             {
                 if (flag == 2)  //2 use
                 {
-                    if (operation1 == '*' || operation1 == '/')
+                    if ((operation2 == '*' || operation2 == '/') && (operation1 != '*' ||  operation1 != '/'))
                     {
-                        result1=Calculate(num1, num2, operation1);
-                        result3= Calculate(result1, num3, operation2);
+                        result1=Calculate(num2, num3, operation2);
+                        result3= Calculate(num1, result1, operation1);
                     }
                     else
                     {
-                        result1= Calculate(num2, num3, operation2);
-                        result3= Calculate(num1, result1, operation1);
+                        result1= Calculate(num1, num2, operation1);
+                        result3= Calculate(result1, num3, operation2);
                     }
                 }
                 else    // 3 use
@@ -187,8 +199,8 @@ namespace MathGen
                             result1 = Calculate(num2, num3, operation2);
                             if (operation3 == '*' || operation3 == '/')
                             {
-                                result2= Calculate(result1, num4, operation3);
-                                result3= Calculate(num1, result2, operation1);
+                                result2 = Calculate(result1, num4, operation3);
+                                result3 = Calculate(num1, result2, operation1);
                             }
                             else
                             {
@@ -202,7 +214,7 @@ namespace MathGen
                             {
                                 result1 = Calculate(num3, num4, operation3);
                                 result2 = Calculate(num1, num2, operation1);
-                                result3 = Calculate(result1,result2, operation2);
+                                result3 = Calculate(result1, result2, operation2);
                             }
                             else
                             {
@@ -216,7 +228,7 @@ namespace MathGen
             }
             return Convert.ToInt32(result3);
         }
-        private double Calculate(double num1, double num2, char operation)
+        private int Calculate(int num1, int num2, char operation)
         {
             switch (operation)
             {

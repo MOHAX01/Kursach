@@ -15,6 +15,7 @@ namespace Monitor.Forms
         public Game_result()
         {
             InitializeComponent();
+            label1.Text = "Score: " + DataBase.Score.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -23,6 +24,7 @@ namespace Monitor.Forms
 
             Menu menuWindow = new Menu();
             menuWindow.Show();
+            
         }
     }
 }

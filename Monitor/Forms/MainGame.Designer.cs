@@ -133,7 +133,7 @@ namespace Monitor
             this.progressBar1.Size = new System.Drawing.Size(193, 23);
             this.progressBar1.Step = 55;
             this.progressBar1.TabIndex = 12;
-            this.progressBar1.Value = 20;
+            this.progressBar1.Value = 100;
             // 
             // label1
             // 

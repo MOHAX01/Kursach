@@ -15,6 +15,15 @@ namespace Monitor
         public static double InCorrectAnswer2;
         public static int[] Answers = new int[3];
         public static int Score;
+        public static int Time;
+
+        public static void Timer()
+        {
+            if (Dificult == 1) Time = 5;
+            if (Dificult == 2) Time = 10;
+            if (Dificult == 3) Time = 15;
+        }
+
         #endregion
 
         #region Backgrounds
@@ -69,6 +78,7 @@ namespace Monitor
             if (Dificult == 1)
             {
                 HPCharacter = 200;
+                StaticHP = 200;
                 AttackCharacter = 10;
 
                 HPEnemy = 30;
@@ -78,6 +88,7 @@ namespace Monitor
             if (Dificult == 2)
             {
                 HPCharacter = 150;
+                StaticHP = 150;
                 AttackCharacter = 15;
 
                 HPEnemy = 80;
@@ -87,6 +98,7 @@ namespace Monitor
             if (Dificult == 3)
             {
                 HPCharacter = 100;
+                StaticHP = 100;
                 AttackCharacter = 20;
 
                 HPEnemy = 150;
@@ -104,6 +116,7 @@ namespace Monitor
             if (Dificult == 1)
             {
                 HPCharacter = 160;
+                StaticHP = 160;
                 AttackCharacter = 15;
 
                 HPEnemy = 40;
@@ -113,6 +126,7 @@ namespace Monitor
             if (Dificult == 2)
             {
                 HPCharacter = 120;
+                StaticHP = 120;
                 AttackCharacter = 20;
 
                 HPEnemy = 100;
@@ -122,6 +136,7 @@ namespace Monitor
             if (Dificult == 3)
             {
                 HPCharacter = 80;
+                StaticHP = 80;
                 AttackCharacter = 30;
 
                 HPEnemy = 180;
@@ -139,6 +154,7 @@ namespace Monitor
             if (Dificult == 1)
             {
                 HPCharacter = 120;
+                StaticHP = 120;
                 AttackCharacter = 20;
 
                 HPEnemy = 20;
@@ -148,6 +164,7 @@ namespace Monitor
             if (Dificult == 2)
             {
                 HPCharacter = 90;
+                StaticHP = 90;
                 AttackCharacter = 30;
 
                 HPEnemy = 60;
@@ -157,6 +174,7 @@ namespace Monitor
             if (Dificult == 3)
             {
                 HPCharacter = 60;
+                StaticHP = 60;
                 AttackCharacter = 40;
 
                 HPEnemy = 100;
@@ -175,6 +193,7 @@ namespace Monitor
             if (Dificult == 1)
             {
                 HPCharacter = 130;
+                StaticHP = 130;
                 AttackCharacter = 25;
 
                 HPEnemy = 50;
@@ -184,6 +203,7 @@ namespace Monitor
             if (Dificult == 2)
             {
                 HPCharacter = 100;
+                StaticHP = 100;
                 AttackCharacter = 40;
 
                 HPEnemy = 120;
@@ -193,6 +213,7 @@ namespace Monitor
             if (Dificult == 3)
             {
                 HPCharacter = 70;
+                StaticHP = 70;
                 AttackCharacter = 60;
 
                 HPEnemy = 200;
@@ -209,6 +230,7 @@ namespace Monitor
         #region Selected Character
 
         public static int HPCharacter;
+        public static int StaticHP;
         public static int AttackCharacter;
         public static int Heal = Convert.ToInt32(HPCharacter * 0.25);
         public static string PicCharapter;

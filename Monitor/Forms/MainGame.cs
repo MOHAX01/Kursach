@@ -39,17 +39,20 @@ namespace Monitor
                 ChangeBackground();
                 chlen();
             }
+            DataBase.Timer();
         }
         
-        int startValue = 15;
+        int startValue=DataBase.Time;
+        
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
+            timer1.Stop();
             this.Hide();
 
             Menu menuWindow = new Menu();
             menuWindow.Show();
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -134,7 +137,7 @@ namespace Monitor
 
         public void chlen()
         {
-            startValue = 15;
+            startValue = DataBase.Time;
             int correctAnswer;
             int InCorrectAnswer1;
             int InCorrectAnswer2;
@@ -198,9 +201,11 @@ namespace Monitor
 
             else
             {
+                timer1.Stop();
                 this.Hide();
                 Game_result win = new Game_result();
                 win.Show();
+                
             }
         }
 
@@ -346,6 +351,8 @@ namespace Monitor
             else
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                DataBase.HPCharacter -= DataBase.AttackEnemy;
+                progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
             }
             chlen();
         }
@@ -361,6 +368,8 @@ namespace Monitor
             else
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                DataBase.HPCharacter -= DataBase.AttackEnemy;
+                progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
             }
             chlen();
         }
@@ -371,11 +380,13 @@ namespace Monitor
             {
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
                 DataBase.Score += DataBase.Dificult;
-                progressBar1.Step += 10;
+                
             }
             else
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                DataBase.HPCharacter -= DataBase.AttackEnemy;
+                progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
             }
 
             chlen();
@@ -389,6 +400,8 @@ namespace Monitor
         private void button4_Click(object sender, EventArgs e)
         {
             label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy/2));
+            DataBase.HPCharacter -= DataBase.AttackEnemy/2;
+            progressBar1.Value = (DataBase.HPCharacter / DataBase.StaticHP) * 100;
 
             chlen();
         }
