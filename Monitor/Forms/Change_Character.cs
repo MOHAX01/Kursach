@@ -132,5 +132,109 @@ namespace Monitor.Forms
         {
 
         }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicWarrior;
+            DataBase.Warrior();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicAssasin;
+            DataBase.Assasin();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicWizzard;
+            DataBase.Wizard();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicNone;
+            DataBase.None();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicWarrior;
+            DataBase.Warrior();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicAssasin;
+            DataBase.Assasin();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicWizzard;
+            DataBase.Wizard();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            DataBase.PicCharapter = DataBase.PicNone;
+            DataBase.None();
+
+            this.Hide();
+            MainGame Window = new MainGame();
+            Window.Show();
+            Window.chlen();
+            Window.ChangeBackground();
+            DataBase.Score = 0;
+        }
     }
 }
