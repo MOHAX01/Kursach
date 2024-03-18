@@ -54,6 +54,11 @@
     <Compile Include="Animatio\Card.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="BasePic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BasePic.resx</DependentUpon>
+    </Compile>
     <Compile Include="DataBase.cs" />
     <Compile Include="Forms\Change_Character.cs">
       <SubType>Form</SubType>
@@ -74,11 +79,6 @@
     <Compile Include="Forms\MainGame.Designer.cs">
       <DependentUpon>MainGame.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MainGame1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MainGame.resx</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Game_result.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +93,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BasePic.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BasePic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Change_Character.resx">
       <DependentUpon>Change_Character.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,8 +105,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainGame.resx">
       <DependentUpon>MainGame.cs</DependentUpon>
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>MainGame1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Game_result.resx">
       <DependentUpon>Game_result.cs</DependentUpon>

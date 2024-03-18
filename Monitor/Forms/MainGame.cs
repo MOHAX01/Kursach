@@ -17,7 +17,7 @@ namespace Monitor
     public partial class MainGame : Form
     {
         public Random random = new Random();
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainGame));
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasePic));
         public MainGame()
         {
             
@@ -30,12 +30,18 @@ namespace Monitor
             //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
             label1.Text = Convert.ToString(DataBase.HPCharacter);
             label2.Text = Convert.ToString(DataBase.HPEnemy);
+            
+            timer1 = new Timer();
+            timer1.Tick += new EventHandler(timer1_Tick);
+            timer1.Interval = 500;
             if (Convert.ToInt32(label1.Text) > 0)
             {
                 ChangeBackground();
                 chlen();
             }
         }
+        
+        int startValue = 15;
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
@@ -128,7 +134,7 @@ namespace Monitor
 
         public void chlen()
         {
-
+            startValue = 15;
             int correctAnswer;
             int InCorrectAnswer1;
             int InCorrectAnswer2;
@@ -385,6 +391,20 @@ namespace Monitor
             label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy/2));
 
             chlen();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(startValue != 0)
+            {
+                label5.Text = startValue.ToString();
+                startValue--;
+            }
+            else
+            {
+                label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                chlen();
+            }
         }
     }
 

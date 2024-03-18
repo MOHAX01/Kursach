@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Monitor.Forms {
+namespace Monitor {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Monitor.Forms {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Main {
+    public class BasePic {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Main() {
+        internal BasePic() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Monitor.Forms {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Monitor.Forms.MainGame", typeof(MainGame).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Monitor.BasePic", typeof(BasePic).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -463,66 +463,6 @@ namespace Monitor.Forms {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap pictureBox1_Image {
-            get {
-                object obj = ResourceManager.GetObject("pictureBox1.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pictureBox2_Image {
-            get {
-                object obj = ResourceManager.GetObject("pictureBox2.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pictureBox4_Image {
-            get {
-                object obj = ResourceManager.GetObject("pictureBox4.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pictureBox5_Image {
-            get {
-                object obj = ResourceManager.GetObject("pictureBox5.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pictureBox6_Image {
-            get {
-                object obj = ResourceManager.GetObject("pictureBox6.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap pictureBox7_Image {
-            get {
-                object obj = ResourceManager.GetObject("pictureBox7.Image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap Warrior {
             get {
                 object obj = ResourceManager.GetObject("Warrior", resourceCulture);
@@ -539,6 +479,5 @@ namespace Monitor.Forms {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
     }
 }
