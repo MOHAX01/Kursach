@@ -319,7 +319,17 @@ namespace Monitor
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
                 DataBase.HPCharacter -= DataBase.AttackEnemy;
-                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                if (DataBase.HPCharacter > 0)
+                {
+                    progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                }
+                else
+                {
+                    timer1.Stop();
+                    this.Hide();
+                    Game_result win = new Game_result();
+                    win.Show();
+                }
             }
             chlen();
         }
@@ -337,7 +347,17 @@ namespace Monitor
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
                 DataBase.HPCharacter -= DataBase.AttackEnemy;
-                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                if (DataBase.HPCharacter > 0)
+                {
+                    progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                }
+                else
+                {
+                    timer1.Stop();
+                    this.Hide();
+                    Game_result win = new Game_result();
+                    win.Show();
+                }
             }
             chlen();
         }
@@ -355,7 +375,17 @@ namespace Monitor
             {
                 label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
                 DataBase.HPCharacter -= DataBase.AttackEnemy;
-                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                if (DataBase.HPCharacter > 0)
+                {
+                    progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                }
+                else
+                {
+                    timer1.Stop();
+                    this.Hide();
+                    Game_result win = new Game_result();
+                    win.Show();
+                }
             }
 
             chlen();
@@ -370,8 +400,17 @@ namespace Monitor
         {
             label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy / 2));
             DataBase.HPCharacter -= DataBase.AttackEnemy / 2;
-            progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
-
+            if (DataBase.HPCharacter > 0)
+            {
+                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+            }
+            else
+            {
+                timer1.Stop();
+                this.Hide();
+                Game_result win = new Game_result();
+                win.Show();
+            }
             chlen();
         }
 
