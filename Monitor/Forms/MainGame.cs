@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using MathGen;
 using Monitor.Forms;
 using System.Diagnostics.Tracing;
+using Monitor;
+using System.Reflection.Emit;
 
 namespace Monitor
 {
@@ -377,30 +379,27 @@ namespace Monitor
         {
             if (startValue != 0 && statusValue == 0)
             {
+                pictureBox8.Image = null;
                 label5.Text = startValue.ToString();
                 startValue--;
             }
             else
             {
-                if (statusValue == 0 && startValue == 0)
+                if (statusValue != 0)
                 {
-                    label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
-                    chlen();
+                    pictureBox8.Image = (Image)(resources.GetObject("Win"));
+                    statusValue--;
                 }
-                else
-                {
-                    if (statusValue > 0)
-                    {
-                        pictureBox8.Image = (Image)(resources.GetObject("Win"));
-                        statusValue--;
-                    }
-                    else
-                    {
-                        pictureBox8.Image = (Image)(resources.GetObject("NonePic"));
-                        chlen();
-                    }
-                }
+                chlen();
             }
         }
     }
 }
+
+//if (statusValue == 0 && startValue == 0)
+//{
+//    label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+//    chlen();
+//}
+//else
+//{
