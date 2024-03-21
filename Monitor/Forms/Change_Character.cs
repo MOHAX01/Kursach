@@ -83,6 +83,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -96,6 +97,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -109,6 +111,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -122,6 +125,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -140,6 +144,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -153,6 +158,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -166,6 +172,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -179,6 +186,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -192,6 +200,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -205,6 +214,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -218,6 +228,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();
@@ -231,6 +242,7 @@ namespace Monitor.Forms
 
             this.Hide();
             MainGame Window = new MainGame();
+            Window.WindowState = this.WindowState;
             Window.Show();
             Window.chlen();
             Window.ChangeBackground();

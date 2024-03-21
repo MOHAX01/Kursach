@@ -26,6 +26,7 @@ namespace Monitor
             this.Hide();
 
             Change_Character window = new Change_Character();
+            window.WindowState = this.WindowState;
             window.Show();
             window.Star_Label();
         }
@@ -36,6 +37,7 @@ namespace Monitor
             this.Hide();
 
             Change_Character window = new Change_Character();
+            window.WindowState = this.WindowState;
             window.Show();
             window.Star_Label();
         }
@@ -46,6 +48,7 @@ namespace Monitor
             this.Hide();
 
             Change_Character window = new Change_Character();
+            window.WindowState = this.WindowState;
             window.Show();
             window.Star_Label();
         }

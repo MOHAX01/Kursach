@@ -55,6 +55,7 @@ namespace Monitor
             this.Hide();
 
             Menu menuWindow = new Menu();
+            menuWindow.WindowState = this.WindowState;
             menuWindow.Show();
 
         }
@@ -155,6 +156,7 @@ namespace Monitor
                 timer1.Stop();
                 this.Hide();
                 Game_result win = new Game_result();
+                win.WindowState = this.WindowState;
                 win.Show();
 
             }
@@ -328,6 +330,7 @@ namespace Monitor
                     timer1.Stop();
                     this.Hide();
                     Game_result win = new Game_result();
+                    win.WindowState = this.WindowState;
                     win.Show();
                 }
             }
@@ -356,6 +359,7 @@ namespace Monitor
                     timer1.Stop();
                     this.Hide();
                     Game_result win = new Game_result();
+                    win.WindowState = this.WindowState;
                     win.Show();
                 }
             }
@@ -384,6 +388,7 @@ namespace Monitor
                     timer1.Stop();
                     this.Hide();
                     Game_result win = new Game_result();
+                    win.WindowState = this.WindowState;
                     win.Show();
                 }
             }
@@ -409,6 +414,7 @@ namespace Monitor
                 timer1.Stop();
                 this.Hide();
                 Game_result win = new Game_result();
+                win.WindowState = this.WindowState;
                 win.Show();
             }
             chlen();
@@ -435,10 +441,3 @@ namespace Monitor
     }
 }
 
-//if (statusValue == 0 && startValue == 0)
-//{
-//    label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
-//    chlen();
-//}
-//else
-//{

@@ -23,6 +23,7 @@ namespace Monitor.Forms
             this.Hide();
 
             Menu menuWindow = new Menu();
+            menuWindow.WindowState = this.WindowState;
             menuWindow.Show();
             
         }

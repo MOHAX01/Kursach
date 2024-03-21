@@ -27,7 +27,8 @@ namespace Monitor
             //Window.Show();
 
             Change_Dif Window = new Change_Dif();
-            Window.ShowDialog();
+            Window.WindowState = this.WindowState;
+            Window.Show();
 
             //Application.Run(new Form1());
         }
