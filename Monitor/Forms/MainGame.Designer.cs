@@ -276,10 +276,10 @@ namespace Monitor
             this.label3.CausesValidation = false;
             this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
-            this.label3.Location = new System.Drawing.Point(395, 69);
+            this.label3.Location = new System.Drawing.Point(349, 69);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(375, 41);
+            this.label3.Size = new System.Drawing.Size(412, 41);
             this.label3.TabIndex = 23;
             this.label3.Text = "label3";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -289,9 +289,9 @@ namespace Monitor
             // 
             this.pictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Location = new System.Drawing.Point(459, 113);
+            this.pictureBox8.Location = new System.Drawing.Point(349, 112);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(237, 184);
+            this.pictureBox8.Size = new System.Drawing.Size(412, 280);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 25;
             this.pictureBox8.TabStop = false;

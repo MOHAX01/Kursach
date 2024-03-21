@@ -93,8 +93,11 @@ namespace Monitor
 
         public void chlen()
         {
-
-            startValue = DataBase.Time;
+            if ( DataBase.HPCharacter > 0 )
+            {
+                startValue = DataBase.Time;
+            }
+            
             int correctAnswer;
             int InCorrectAnswer1;
             int InCorrectAnswer2;
@@ -152,7 +155,7 @@ namespace Monitor
             }
             else if (Convert.ToInt32(label1.Text) > 0)
             {
-                statusValue = 2;
+                statusValue = 4;
                 ChangeBackground();
                 chlen();
             }
@@ -327,7 +330,7 @@ namespace Monitor
                 }
                 else 
                 {
-                    statusValue = 2;
+                    statusValue = 4;
                     ChangeBackground();
                     chlen();
                 }
@@ -344,9 +347,9 @@ namespace Monitor
                 {
                     timer1.Stop();
                     this.Hide();
-                    Game_result win = new Game_result();
-                    win.WindowState = this.WindowState;
-                    win.Show();
+                    //Game_result win = new Game_result();
+                    //win.WindowState = this.WindowState;
+                    //win.Show();
                 }
             }
             chlen();
@@ -365,7 +368,7 @@ namespace Monitor
                 }
                 else
                 {
-                    statusValue = 2;
+                    statusValue = 4;
                     ChangeBackground();
                     chlen();
                 }
@@ -382,9 +385,9 @@ namespace Monitor
                 {
                     timer1.Stop();
                     this.Hide();
-                    Game_result win = new Game_result();
-                    win.WindowState = this.WindowState;
-                    win.Show();
+                    //Game_result win = new Game_result();
+                    //win.WindowState = this.WindowState;
+                    //win.Show();
                 }
             }
             chlen();
@@ -403,7 +406,7 @@ namespace Monitor
                 }
                 else
                 {
-                    statusValue = 2;
+                    statusValue = 4;
                     ChangeBackground();
                     chlen();
                 }
@@ -420,9 +423,9 @@ namespace Monitor
                 {
                     timer1.Stop();
                     this.Hide();
-                    Game_result win = new Game_result();
-                    win.WindowState = this.WindowState;
-                    win.Show();
+                    //Game_result win = new Game_result();
+                    //win.WindowState = this.WindowState;
+                    //win.Show();
                 }
             }
 
@@ -446,9 +449,9 @@ namespace Monitor
             {
                 timer1.Stop();
                 this.Hide();
-                Game_result win = new Game_result();
-                win.WindowState = this.WindowState;
-                win.Show();
+                //Game_result win = new Game_result();
+                //win.WindowState = this.WindowState;
+                //win.Show();
             }
             chlen();
         }
@@ -467,6 +470,7 @@ namespace Monitor
                 {
                     if (statusValue != 0)
                     {
+                        timer1.Stop();
                         pictureBox8.Image = (Image)(resources.GetObject("Win"));
                         statusValue--;
                     }
@@ -477,22 +481,26 @@ namespace Monitor
                         if (DataBase.HPCharacter > 0)
                         {
                             progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                            chlen();
                         }
                         else
                         {
                             timer1.Stop();
-                            this.Hide();
-                            Game_result win = new Game_result();
-                            win.WindowState = this.WindowState;
-                            win.Show();
+                            this.Close();
+                            //Game_result win = new Game_result();
+                            //win.WindowState = this.WindowState;
+                            //win.Show();
                         }
-                        chlen();
+                        
                     }
+                }
+                if (DataBase.HPCharacter < 0)
+                {
+                    timer1.Stop();
                 }
             }
             else timer1.Stop();
-        }
-               
+        }             
     }
 }
 

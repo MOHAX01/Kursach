@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Monitor.Forms
 {
@@ -36,7 +37,11 @@ namespace Monitor.Forms
                 {
                     f.Hide();
                 }
-                else f.Show();
+                else
+                {
+                    f.Show();
+                    f.WindowState = this.WindowState;
+                }
             }
 
             //Menu win = new Menu();
