@@ -104,7 +104,7 @@
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Change_Dif";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Change_Dif";
             this.Load += new System.EventHandler(this.Change_Dif_Load);
             this.ResumeLayout(false);
