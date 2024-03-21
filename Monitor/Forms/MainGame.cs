@@ -321,7 +321,16 @@ namespace Monitor
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
                 DataBase.HPEnemy = Convert.ToInt32(label2.Text);
                 DataBase.Score += DataBase.Dificult;
-                progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                if (DataBase.HPEnemy > 0)
+                {
+                    progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                }
+                else 
+                {
+                    statusValue = 2;
+                    ChangeBackground();
+                    chlen();
+                }
             }
             else
             {
@@ -350,7 +359,16 @@ namespace Monitor
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
                 DataBase.HPEnemy = Convert.ToInt32(label2.Text);
                 DataBase.Score += DataBase.Dificult;
-                progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                if (DataBase.HPEnemy > 0)
+                {
+                    progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                }
+                else
+                {
+                    statusValue = 2;
+                    ChangeBackground();
+                    chlen();
+                }
             }
             else
             {
@@ -379,7 +397,16 @@ namespace Monitor
                 label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
                 DataBase.HPEnemy = Convert.ToInt32(label2.Text);
                 DataBase.Score += DataBase.Dificult;
-                progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                if (DataBase.HPEnemy > 0)
+                {
+                    progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                }
+                else
+                {
+                    statusValue = 2;
+                    ChangeBackground();
+                    chlen();
+                }
             }
             else
             {
