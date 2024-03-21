@@ -16,6 +16,7 @@ namespace Monitor
         public static int[] Answers = new int[3];
         public static int Score;
         public static int Time;
+        public static int Flag = 1;
 
         public static void Timer()
         {

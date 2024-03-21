@@ -36,6 +36,7 @@ namespace Monitor
             timer1 = new Timer();
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000;
+            
             if (Convert.ToInt32(label1.Text) > 0)
             {
                 ChangeBackground();
@@ -51,12 +52,17 @@ namespace Monitor
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
+            DataBase.Flag = 0;
             timer1.Stop();
-            this.Hide();
+            timer1.Dispose();
+            //this.Hide();
 
-            Menu menuWindow = new Menu();
-            menuWindow.WindowState = this.WindowState;
-            menuWindow.Show();
+            //Menu menuWindow = new Menu();
+            //menuWindow.WindowState = this.WindowState;
+            //menuWindow.Show();
+            Forms.Settings window = new Forms.Settings();
+            window.ShowDialog(this);
+            //window.Show();
 
         }
 
@@ -422,22 +428,44 @@ namespace Monitor
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (startValue != 0 && statusValue == 0)
+            if (DataBase.Flag == 1)
             {
-                pictureBox8.Image = null;
-                label5.Text = startValue.ToString();
-                startValue--;
-            }
-            else
-            {
-                if (statusValue != 0)
+                if (startValue != 0 && statusValue == 0)
                 {
-                    pictureBox8.Image = (Image)(resources.GetObject("Win"));
-                    statusValue--;
+                    pictureBox8.Image = null;
+                    label5.Text = startValue.ToString();
+                    startValue--;
                 }
-                chlen();
+                else
+                {
+                    if (statusValue != 0)
+                    {
+                        pictureBox8.Image = (Image)(resources.GetObject("Win"));
+                        statusValue--;
+                    }
+                    else
+                    {
+                        label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy / 2));
+                        DataBase.HPCharacter -= DataBase.AttackEnemy / 2;
+                        if (DataBase.HPCharacter > 0)
+                        {
+                            progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                        }
+                        else
+                        {
+                            timer1.Stop();
+                            this.Hide();
+                            Game_result win = new Game_result();
+                            win.WindowState = this.WindowState;
+                            win.Show();
+                        }
+                        chlen();
+                    }
+                }
             }
+            else timer1.Stop();
         }
+               
     }
 }
 

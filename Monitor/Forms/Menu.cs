@@ -42,5 +42,10 @@ namespace Monitor
         {
 
         }
+
+        public void Start()
+        {
+            this.Show();
+        }
     }
 }

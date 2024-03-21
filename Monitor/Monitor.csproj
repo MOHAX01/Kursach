@@ -73,6 +73,12 @@
       <DependentUpon>Change_Dif.cs</DependentUpon>
     </Compile>
     <Compile Include="Animatio\FlatColors.cs" />
+    <Compile Include="Forms\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
