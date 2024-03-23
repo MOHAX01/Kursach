@@ -26,26 +26,12 @@ namespace Monitor.Forms
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
-            DataBase.Flag = 1;
+            DataBase.FlagSetting = 1;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
-        { 
-            foreach(Form f in Application.OpenForms)
-            {
-                if (f.GetType() != typeof(Menu))
-                {
-                    f.Hide();
-                }
-                else
-                {
-                    f.Show();
-                    f.WindowState = this.WindowState;
-                }
-            }
-
-            //Menu win = new Menu();
-            //win.Show();
+        {          
+            Application.Restart();
         }
     }
 }

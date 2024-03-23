@@ -20,7 +20,7 @@ namespace Monitor.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
 
             Menu menuWindow = new Menu();
             menuWindow.WindowState = this.WindowState;

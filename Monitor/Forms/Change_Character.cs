@@ -81,7 +81,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicWarrior;
             DataBase.Warrior();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -95,7 +95,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicAssasin;
             DataBase.Assasin();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -109,7 +109,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicWizzard;
             DataBase.Wizard();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -123,7 +123,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicNone;
             DataBase.None();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -142,7 +142,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicWarrior;
             DataBase.Warrior();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -156,7 +156,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicAssasin;
             DataBase.Assasin();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -170,7 +170,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicWizzard;
             DataBase.Wizard();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -184,7 +184,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicNone;
             DataBase.None();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -198,7 +198,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicWarrior;
             DataBase.Warrior();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -212,7 +212,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicAssasin;
             DataBase.Assasin();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -226,7 +226,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicWizzard;
             DataBase.Wizard();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -240,7 +240,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.PicNone;
             DataBase.None();
 
-            this.Hide();
+            this.Close();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();

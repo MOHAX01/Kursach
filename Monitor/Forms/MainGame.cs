@@ -52,7 +52,7 @@ namespace Monitor
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            DataBase.Flag = 0;
+            DataBase.FlagSetting = 0;
             timer1.Stop();
             timer1.Dispose();
             //this.Hide();
@@ -61,7 +61,7 @@ namespace Monitor
             //menuWindow.WindowState = this.WindowState;
             //menuWindow.Show();
             Forms.Settings window = new Forms.Settings();
-            window.ShowDialog(this);
+            window.Show();
             //window.Show();
 
         }
@@ -93,18 +93,19 @@ namespace Monitor
 
         public void chlen()
         {
+            DataBase.FlagButton = 1;
             if ( DataBase.HPCharacter > 0 )
             {
                 startValue = DataBase.Time;
             }
-            
+
             int correctAnswer;
             int InCorrectAnswer1;
             int InCorrectAnswer2;
             string exem;
             MathGenerator game = new MathGenerator();
 
-            if (Convert.ToInt32(label2.Text) > 0 && Convert.ToInt32(label1.Text) > 0)
+            if (DataBase.HPEnemy > 0 && DataBase.HPCharacter > 0)
             {
                 game.GenerateQuiz(DataBase.Dificult, out correctAnswer, out InCorrectAnswer1, out InCorrectAnswer2, out exem);
                 label3.Text = exem;
@@ -153,22 +154,27 @@ namespace Monitor
 
                 label4.Text = "Score: " + Convert.ToString(DataBase.Score);
             }
-            else if (Convert.ToInt32(label1.Text) > 0)
+            else 
             {
-                statusValue = 4;
-                ChangeBackground();
-                chlen();
-            }
+                if (DataBase.HPCharacter > 0)
+                {
+                    statusValue = 3;
+                    DataBase.FlagButton = 0;
+                    progressBar2.Value = 0;
+                    //ChangeBackground();
+                    //chlen();
+                }
+                else
+                {
+                    timer1.Stop();
+                    this.Close();
+                    Game_result win = new Game_result();
+                    win.WindowState = this.WindowState;
+                    win.Show();
 
-            else
-            {
-                timer1.Stop();
-                this.Hide();
-                Game_result win = new Game_result();
-                win.WindowState = this.WindowState;
-                win.Show();
-
+                }
             }
+            
         }
 
         public void ChangeBackground()
@@ -184,6 +190,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 2:
@@ -192,6 +199,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 3:
@@ -200,6 +208,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 4:
@@ -208,6 +217,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                 }
@@ -223,6 +233,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 2:
@@ -231,6 +242,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 3:
@@ -239,6 +251,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 4:
@@ -247,6 +260,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 5:
@@ -255,6 +269,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                 }
@@ -270,6 +285,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 2:
@@ -278,6 +294,7 @@ namespace Monitor
                         // pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 3:
@@ -286,6 +303,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 4:
@@ -294,6 +312,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 5:
@@ -302,6 +321,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 6:
@@ -310,6 +330,7 @@ namespace Monitor
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
                         pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                 }
@@ -319,117 +340,130 @@ namespace Monitor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (button1.Text == Convert.ToString(DataBase.CorrectAnswer))
+            if (DataBase.FlagButton == 1)
             {
-                label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
-                DataBase.HPEnemy = Convert.ToInt32(label2.Text);
-                DataBase.Score += DataBase.Dificult;
-                if (DataBase.HPEnemy > 0)
+                if (button1.Text == Convert.ToString(DataBase.CorrectAnswer))
                 {
-                    progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
-                }
-                else 
-                {
-                    statusValue = 4;
-                    ChangeBackground();
-                    chlen();
-                }
-            }
-            else
-            {
-                label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
-                DataBase.HPCharacter -= DataBase.AttackEnemy;
-                if (DataBase.HPCharacter > 0)
-                {
-                    progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                    label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
+                    DataBase.HPEnemy = Convert.ToInt32(label2.Text);
+                    DataBase.Score += DataBase.Dificult;
+                    if (DataBase.HPEnemy > 0)
+                    {
+                        progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                    }
+                    else
+                    {
+                        //statusValue = 3;
+                        progressBar2.Value = 0;
+                        //ChangeBackground();
+                        //chlen();
+                    }
                 }
                 else
                 {
-                    timer1.Stop();
-                    this.Hide();
-                    //Game_result win = new Game_result();
-                    //win.WindowState = this.WindowState;
-                    //win.Show();
+                    label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                    DataBase.HPCharacter -= DataBase.AttackEnemy;
+                    if (DataBase.HPCharacter > 0)
+                    {
+                        progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                    }
+                    else
+                    {
+                        timer1.Stop();
+                        this.Close();
+                        //Game_result win = new Game_result();
+                        //win.WindowState = this.WindowState;
+                        //win.Show();
+                    }
                 }
+                chlen();
             }
-            chlen();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (button2.Text == Convert.ToString(DataBase.CorrectAnswer))
+            if (DataBase.FlagButton == 1)
             {
-                label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
-                DataBase.HPEnemy = Convert.ToInt32(label2.Text);
-                DataBase.Score += DataBase.Dificult;
-                if (DataBase.HPEnemy > 0)
+                if (button2.Text == Convert.ToString(DataBase.CorrectAnswer))
                 {
-                    progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                    label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
+                    DataBase.HPEnemy = Convert.ToInt32(label2.Text);
+                    DataBase.Score += DataBase.Dificult;
+                    if (DataBase.HPEnemy > 0)
+                    {
+                        progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                    }
+                    else
+                    {
+                        //statusValue = 3;
+                        progressBar2.Value = 0;
+                        //ChangeBackground();
+                        //chlen();
+                    }
                 }
                 else
                 {
-                    statusValue = 4;
-                    ChangeBackground();
-                    chlen();
+                    label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                    DataBase.HPCharacter -= DataBase.AttackEnemy;
+                    if (DataBase.HPCharacter > 0)
+                    {
+                        progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                    }
+                    else
+                    {
+                        timer1.Stop();
+                        this.Close();
+                        //Game_result win = new Game_result();
+                        //win.WindowState = this.WindowState;
+                        //win.Show();
+                    }
                 }
+                chlen();
             }
-            else
-            {
-                label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
-                DataBase.HPCharacter -= DataBase.AttackEnemy;
-                if (DataBase.HPCharacter > 0)
-                {
-                    progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
-                }
-                else
-                {
-                    timer1.Stop();
-                    this.Hide();
-                    //Game_result win = new Game_result();
-                    //win.WindowState = this.WindowState;
-                    //win.Show();
-                }
-            }
-            chlen();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (button3.Text == Convert.ToString(DataBase.CorrectAnswer))
+            if (DataBase.FlagButton == 1)
             {
-                label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
-                DataBase.HPEnemy = Convert.ToInt32(label2.Text);
-                DataBase.Score += DataBase.Dificult;
-                if (DataBase.HPEnemy > 0)
+                if (button3.Text == Convert.ToString(DataBase.CorrectAnswer))
                 {
-                    progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                    label2.Text = Convert.ToString(Convert.ToInt32(label2.Text) - DataBase.AttackCharacter);
+                    DataBase.HPEnemy = Convert.ToInt32(label2.Text);
+                    DataBase.Score += DataBase.Dificult;
+                    if (DataBase.HPEnemy > 0)
+                    {
+                        progressBar2.Value = Convert.ToInt32(((Convert.ToDouble(DataBase.HPEnemy) / Convert.ToDouble(DataBase.StaticHPEnemy)) * 100));
+                    }
+                    else
+                    {
+                        //statusValue = 3;
+                        progressBar2.Value = 0;
+                        //ChangeBackground();
+                        //chlen();
+                    }
                 }
                 else
                 {
-                    statusValue = 4;
-                    ChangeBackground();
-                    chlen();
+                    label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
+                    DataBase.HPCharacter -= DataBase.AttackEnemy;
+                    if (DataBase.HPCharacter > 0)
+                    {
+                        progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                    }
+                    else
+                    {
+                        timer1.Stop();
+                        this.Close();
+                        //Game_result win = new Game_result();
+                        //win.WindowState = this.WindowState;
+                        //win.Show();
+                    }
                 }
-            }
-            else
-            {
-                label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - DataBase.AttackEnemy);
-                DataBase.HPCharacter -= DataBase.AttackEnemy;
-                if (DataBase.HPCharacter > 0)
-                {
-                    progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
-                }
-                else
-                {
-                    timer1.Stop();
-                    this.Hide();
-                    //Game_result win = new Game_result();
-                    //win.WindowState = this.WindowState;
-                    //win.Show();
-                }
-            }
 
-            chlen();
+                chlen();
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -439,29 +473,34 @@ namespace Monitor
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy / 2));
-            DataBase.HPCharacter -= DataBase.AttackEnemy / 2;
-            if (DataBase.HPCharacter > 0)
+            if (DataBase.FlagButton == 1)
             {
-                progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy / 2));
+                DataBase.HPCharacter -= DataBase.AttackEnemy / 2;
+                if (DataBase.HPCharacter > 0)
+                {
+                    progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
+                }
+                else
+                {
+                    timer1.Stop();
+                    this.Close();
+                    //Game_result win = new Game_result();
+                    //win.WindowState = this.WindowState;
+                    //win.Show();
+                }
+                chlen();
             }
-            else
-            {
-                timer1.Stop();
-                this.Hide();
-                //Game_result win = new Game_result();
-                //win.WindowState = this.WindowState;
-                //win.Show();
-            }
-            chlen();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (DataBase.Flag == 1)
+            if (DataBase.FlagSetting == 1)
             {
+
                 if (startValue != 0 && statusValue == 0)
                 {
+
                     pictureBox8.Image = null;
                     label5.Text = startValue.ToString();
                     startValue--;
@@ -470,18 +509,19 @@ namespace Monitor
                 {
                     if (statusValue != 0)
                     {
-                        timer1.Stop();
+                        //timer1.Stop();
                         pictureBox8.Image = (Image)(resources.GetObject("Win"));
                         statusValue--;
                     }
                     else
                     {
+                        
+
                         label1.Text = Convert.ToString(Convert.ToInt32(label1.Text) - (DataBase.AttackEnemy / 2));
                         DataBase.HPCharacter -= DataBase.AttackEnemy / 2;
                         if (DataBase.HPCharacter > 0)
                         {
                             progressBar1.Value = Convert.ToInt32((Convert.ToDouble(DataBase.HPCharacter) / Convert.ToDouble(DataBase.StaticHP)) * 100);
-                            chlen();
                         }
                         else
                         {
@@ -492,6 +532,12 @@ namespace Monitor
                             //win.Show();
                         }
                         
+                    }
+                    if (statusValue == 0)
+                    {
+                        pictureBox8.Image = null;
+                        ChangeBackground();
+                        chlen();
                     }
                 }
                 if (DataBase.HPCharacter < 0)

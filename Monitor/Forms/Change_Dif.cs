@@ -14,7 +14,6 @@ namespace Monitor
     
     public partial class Change_Dif : Form
     {
-        public int Difficult;
         public Change_Dif()
         {
             InitializeComponent();
@@ -23,7 +22,7 @@ namespace Monitor
         private void card1_Click(object sender, EventArgs e)
         {
             DataBase.Dificult = 1;
-            this.Hide();
+            this.Close();
 
             Change_Character window = new Change_Character();
             window.WindowState = this.WindowState;
@@ -34,7 +33,7 @@ namespace Monitor
         private void card2_Click(object sender, EventArgs e)
         {
             DataBase.Dificult = 2; 
-            this.Hide();
+            this.Close();
 
             Change_Character window = new Change_Character();
             window.WindowState = this.WindowState;
@@ -45,7 +44,7 @@ namespace Monitor
         private void card3_Click(object sender, EventArgs e)
         {
             DataBase.Dificult = 3;
-            this.Hide();
+            this.Close();
 
             Change_Character window = new Change_Character();
             window.WindowState = this.WindowState;
