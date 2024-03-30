@@ -18,6 +18,8 @@ namespace Monitor
         public static int Time;
         public static int FlagSetting = 1;
         public static int FlagButton = 0;
+        public static int FlagClose = 0;
+        public static int FlagCheck = 1;
 
         public static void Timer()
         {

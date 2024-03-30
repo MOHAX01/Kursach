@@ -25,7 +25,7 @@ namespace Monitor
         {
 
             InitializeComponent();
-
+            DataBase.FlagSetting = 1;
             pictureBox3.Image = ((Image)(resources.GetObject(DataBase.PicCharapter)));
             pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
             DataBase.Timer();
@@ -37,6 +37,9 @@ namespace Monitor
             timer1.Tick += new EventHandler(timer1_Tick);
             timer1.Interval = 1000;
             
+
+
+
             if (Convert.ToInt32(label1.Text) > 0)
             {
                 ChangeBackground();
@@ -61,9 +64,18 @@ namespace Monitor
             //menuWindow.WindowState = this.WindowState;
             //menuWindow.Show();
             Forms.Settings window = new Forms.Settings();
-            window.Show();
+            window.ShowDialog();
             //window.Show();
 
+            if (DataBase.FlagClose == 1)
+            {
+                timer1.Stop();
+                Menu Window = new Menu();
+                Window.WindowState = this.WindowState;
+                Window.Show();
+                this.Close();
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

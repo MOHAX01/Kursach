@@ -31,7 +31,14 @@ namespace Monitor.Forms
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {          
-            Application.Restart();
+            //Application.Restart();
+            DataBase.FlagClose = 1;
+            this.Close();
+        }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
