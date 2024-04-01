@@ -1,11 +1,81 @@
-﻿using System;
+﻿using AxWMPLib;
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
+using WMPLib;
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Monitor
 {
+
+    //public class Music
+    //{
+    //    private SoundPlayer[] players;
+    //    private int currentSongIndex;
+
+    //    public void Play()
+    //    {
+    //        InitializePlayers();
+    //        currentSongIndex = 0;
+    //        PlayNextSong();
+
+    //    }
+    //    private void InitializePlayers()
+    //    {
+    //        players = new SoundPlayer[6];
+    //        players[0] = new SoundPlayer(BasePic.domitori_taranofu_moments_of_the_past);
+    //        players[1] = new SoundPlayer(BasePic.domitori_taranofu_sakuras_life);
+    //        players[2] = new SoundPlayer(BasePic.ghillie_dhu_the_scottish_highlands_instrumental);
+    //        players[3] = new SoundPlayer(BasePic.neizvesten_daydreams_and_heartaches_by_odd_things);
+    //        players[4] = new SoundPlayer(BasePic.sun_shapes_a_place_only_we_know_instrumental_2);
+    //        players[5] = new SoundPlayer(BasePic.ttrruutthh_strength_surrounds_instrumental);
+    //    }
+    //    private void PlayNextSong()
+    //    {
+
+    //        if (currentSongIndex >= players.Length)
+    //        {
+    //            currentSongIndex = 0;
+    //        }
+    //        players[currentSongIndex].Play();
+
+    //        currentSongIndex++;
+    //    }
+    //}
+
+    public class Music
+    {
+        public MediaPlayer[] player;
+        public int currentSongIndex;
+        public void Play()
+        {
+            //InitializePlayers();
+            //currentSongIndex = 0;
+            //PlayNextSong();
+            
+
+        }
+        //private void InitializePlayers()
+        //{
+        //    player = new MediaPlayer[6];
+        //    player[0] = new MediaPlayer();
+        //    player[0].
+        //}
+    }
+
+
+
+
+
+
     static class DataBase
     {
         #region Math Exem
@@ -20,6 +90,7 @@ namespace Monitor
         public static int FlagButton = 0;
         public static int FlagClose = 0;
         public static int FlagCheck = 1;
+        public static int Volue=10;
 
         public static void Timer()
         {
@@ -27,6 +98,33 @@ namespace Monitor
             if (Dificult == 2) Time = 15;     //15
             if (Dificult == 3) Time = 20;     //20
         }
+
+
+        public static string ChangePerson(int Gender, int Class)
+        {
+            if (Gender == 1)
+            {
+                switch(Class)
+                {
+                    case 1: return "WarM";
+                    case 2: return "AsM";
+                    case 3: return "WizM";
+                    case 4: return "SM";
+                }
+            }
+            else
+            {
+                switch (Class)
+                {
+                    case 1: return "WarF";
+                    case 2: return "AsF";
+                    case 3: return "WizF";
+                    case 4: return "SF";
+                }
+            }
+            return "";
+        }
+
 
         #endregion
 
@@ -123,8 +221,8 @@ namespace Monitor
                 StaticHP = 160;
                 AttackCharacter = 15;
 
-                HPEnemy = 40;
-                StaticHPEnemy = 40;
+                HPEnemy = 30;
+                StaticHPEnemy = 30;
                 AttackEnemy = 15;
             }
             if (Dificult == 2)
@@ -133,8 +231,8 @@ namespace Monitor
                 StaticHP = 120;
                 AttackCharacter = 20;
 
-                HPEnemy = 100;
-                StaticHPEnemy = 100;
+                HPEnemy = 50;
+                StaticHPEnemy = 50;
                 AttackEnemy = 25;
             }
             if (Dificult == 3)
@@ -161,8 +259,8 @@ namespace Monitor
                 StaticHP = 120;
                 AttackCharacter = 20;
 
-                HPEnemy = 20;
-                StaticHPEnemy = 20;
+                HPEnemy = 40;
+                StaticHPEnemy = 40;
                 AttackEnemy = 10;
             }
             if (Dificult == 2)
@@ -330,5 +428,19 @@ namespace Monitor
         }
 
         #endregion
+
+        #region Music
+
+        public static Music ms = new Music();
+
+        public static void Play()
+        {
+            ms.Play();
+        }
+       
+        
+
+        #endregion
+
     }
 }

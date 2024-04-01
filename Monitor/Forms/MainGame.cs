@@ -26,8 +26,11 @@ namespace Monitor
 
             InitializeComponent();
             DataBase.FlagSetting = 1;
-            pictureBox3.Image = ((Image)(resources.GetObject(DataBase.PicCharapter)));
-            pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+            panel2.BackgroundImage = ((Image)(resources.GetObject(DataBase.PicCharapter)));
+            //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+            pictureBox2.Visible= false;
+            string m = Convert.ToString(random.Next(1, 35));
+            panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
             DataBase.Timer();
             //pictureBox3.Image = Image.FromFile(DataBase.PicCharapter);
             //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
@@ -58,24 +61,18 @@ namespace Monitor
             DataBase.FlagSetting = 0;
             timer1.Stop();
             timer1.Dispose();
-            //this.Hide();
-
-            //Menu menuWindow = new Menu();
-            //menuWindow.WindowState = this.WindowState;
-            //menuWindow.Show();
-            Forms.Settings window = new Forms.Settings();
+            Set window = new Set();
             window.ShowDialog();
-            //window.Show();
-
-            if (DataBase.FlagClose == 1)
+            if(DataBase.FlagClose == 1)
             {
-                timer1.Stop();
-                Menu Window = new Menu();
-                Window.WindowState = this.WindowState;
-                Window.Show();
+                Menu win = new Menu();
+                win.Show();
                 this.Close();
             }
-            
+            else
+            {
+                DataBase.FlagSetting = 1;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -100,7 +97,7 @@ namespace Monitor
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            pictureBox3 = null;
         }
 
         public void chlen()
@@ -194,13 +191,15 @@ namespace Monitor
             if (DataBase.Dificult == 1)
             {
                 int v = random.Next(0, 4);
+                string m = Convert.ToString(random.Next(1, 34));
                 switch (v)
                 {
                     case 1:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy1)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -209,7 +208,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy2);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy2)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -218,7 +218,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy3);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy3)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -227,7 +228,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackEasy4);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy4)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -237,13 +239,15 @@ namespace Monitor
             if (DataBase.Dificult == 2)
             {
                 int v = random.Next(0, 5);
+                string m = Convert.ToString(random.Next(1, 35));
                 switch (v)
                 {
                     case 1:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm1)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -252,7 +256,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm2);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm2)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -261,7 +266,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm3);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm3)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -270,7 +276,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm4);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm4)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -279,7 +286,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackNorm5);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm5)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -289,13 +297,15 @@ namespace Monitor
             if (DataBase.Dificult == 3)
             {
                 int v = random.Next(0, 6);
+                string m = Convert.ToString(random.Next(1, 35));
                 switch (v)
                 {
                     case 1:
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard1)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -304,7 +314,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard2);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard2)));
                         // pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -313,7 +324,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard3);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard3)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -322,7 +334,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard4);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard4)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -331,7 +344,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard5);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard5)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -340,7 +354,8 @@ namespace Monitor
                         //this.BackgroundImage = Image.FromFile(DataBase.BackHard6);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard6)));
                         //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
+                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
@@ -558,7 +573,69 @@ namespace Monitor
                 }
             }
             else timer1.Stop();
-        }             
+        }
+
+        //private void button5_Click(object sender, EventArgs e)
+        //{
+        //    panel1.Visible= false;
+        //    DataBase.FlagSetting = 1;
+        //    //timer1.Start();
+        //}
+
+        //private void button5_MouseEnter(object sender, EventArgs e)
+        //{
+        //    button5.BackgroundImage = ((Image)(resources.GetObject("ON")));
+        //}
+
+        //private void button5_MouseLeave(object sender, EventArgs e)
+        //{
+        //    button5.BackgroundImage = ((Image)(resources.GetObject("OFF")));
+        //}
+
+        //private void button6_Click(object sender, EventArgs e)
+        //{
+        //    panel1.Visible = false;
+        //    timer1.Stop();
+        //    Menu Window = new Menu();
+        //    Window.WindowState = this.WindowState;
+        //    Window.Show();
+        //    this.Close();
+        //}
+
+        //private void button6_MouseEnter(object sender, EventArgs e)
+        //{
+        //    button6.BackgroundImage = ((Image)(resources.GetObject("ON")));
+        //}
+
+        //private void button6_MouseLeave(object sender, EventArgs e)
+        //{
+        //    button6.BackgroundImage = ((Image)(resources.GetObject("OFF")));
+        //}
+
+        //private void button7_Click(object sender, EventArgs e)
+        //{
+        //    Application.Exit();
+        //}
+
+        //private void button7_MouseEnter(object sender, EventArgs e)
+        //{
+        //    button7.BackgroundImage = ((Image)(resources.GetObject("ON")));
+        //}
+
+        //private void button7_MouseLeave(object sender, EventArgs e)
+        //{
+        //    button7.BackgroundImage = ((Image)(resources.GetObject("OFF")));
+        //}
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

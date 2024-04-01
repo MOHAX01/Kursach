@@ -12,11 +12,15 @@ namespace Monitor.Forms
 {
     public partial class Change_Character : Form
     {
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Monsters));
         public Change_Character()
         {
             InitializeComponent();
         }
-
+        private int GenderWarrior=1;
+        private int GenderAssasin=1;
+        private int GenderWizard=1;
+        private int GenderSummoner=1;
         private void label5_Text()
         {
             DataBase.Warrior();
@@ -78,7 +82,7 @@ namespace Monitor.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicWarrior;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderWarrior,1);
             DataBase.Warrior();
 
             this.Close();
@@ -92,7 +96,7 @@ namespace Monitor.Forms
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicAssasin;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderAssasin,2);
             DataBase.Assasin();
 
             this.Close();
@@ -106,7 +110,7 @@ namespace Monitor.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicWizzard;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderWizard,3);
             DataBase.Wizard();
 
             this.Close();
@@ -120,7 +124,7 @@ namespace Monitor.Forms
 
         private void button4_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicNone;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderSummoner,4);
             DataBase.None();
 
             this.Close();
@@ -139,7 +143,7 @@ namespace Monitor.Forms
 
         private void panel1_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicWarrior;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderWarrior, 1); ;
             DataBase.Warrior();
 
             this.Close();
@@ -153,7 +157,7 @@ namespace Monitor.Forms
 
         private void panel2_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicAssasin;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderAssasin, 2);
             DataBase.Assasin();
 
             this.Close();
@@ -167,7 +171,7 @@ namespace Monitor.Forms
 
         private void panel3_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicWizzard;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderWizard,3);
             DataBase.Wizard();
 
             this.Close();
@@ -181,7 +185,7 @@ namespace Monitor.Forms
 
         private void panel4_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicNone;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderSummoner, 4);
             DataBase.None();
 
             this.Close();
@@ -195,7 +199,7 @@ namespace Monitor.Forms
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicWarrior;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderWarrior, 1); ;
             DataBase.Warrior();
 
             this.Close();
@@ -209,7 +213,7 @@ namespace Monitor.Forms
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicAssasin;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderAssasin, 2);
             DataBase.Assasin();
 
             this.Close();
@@ -223,7 +227,7 @@ namespace Monitor.Forms
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicWizzard;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderWizard, 3);
             DataBase.Wizard();
 
             this.Close();
@@ -237,7 +241,7 @@ namespace Monitor.Forms
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            DataBase.PicCharapter = DataBase.PicNone;
+            DataBase.PicCharapter = DataBase.ChangePerson(GenderSummoner, 4);
             DataBase.None();
 
             this.Close();
@@ -247,6 +251,54 @@ namespace Monitor.Forms
             Window.chlen();
             Window.ChangeBackground();
             DataBase.Score = 0;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = ((Image)(resources.GetObject("WarriorMale")));
+            GenderWarrior = 1;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = ((Image)(resources.GetObject("WarriorFemale")));
+            GenderWarrior = 0;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Image = ((Image)(resources.GetObject("AssasinMale")));
+            GenderAssasin = 1;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Image = ((Image)(resources.GetObject("AssasinFemale")));
+            GenderAssasin = 0;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            pictureBox3.Image = ((Image)(resources.GetObject("WizardMale")));
+            GenderWizard = 1;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            pictureBox3.Image = ((Image)(resources.GetObject("WizardFemale")));
+            GenderWizard = 0;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            pictureBox4.Image = ((Image)(resources.GetObject("SummonerMale")));
+            GenderSummoner = 1;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            pictureBox4.Image = ((Image)(resources.GetObject("SummonerFemale")));
+            GenderSummoner = 0;
         }
     }
 }

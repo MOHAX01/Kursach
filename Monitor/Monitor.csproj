@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Monitor</RootNamespace>
     <AssemblyName>Monitor</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -28,6 +28,7 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -70,6 +71,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -81,6 +83,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animatio\Animation.cs" />
@@ -111,11 +114,11 @@
       <DependentUpon>Change_Dif.cs</DependentUpon>
     </Compile>
     <Compile Include="Animatio\FlatColors.cs" />
-    <Compile Include="Forms\Settings.cs">
+    <Compile Include="Forms\Set.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Settings.Designer.cs">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <Compile Include="Forms\Set.Designer.cs">
+      <DependentUpon>Set.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainGame.cs">
       <SubType>Form</SubType>
@@ -137,6 +140,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Monsters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Monsters.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BasePic.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>BasePic.Designer.cs</LastGenOutput>
@@ -156,8 +164,8 @@
     <EmbeddedResource Include="Forms\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Settings.resx">
-      <DependentUpon>Settings.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Set.resx">
+      <DependentUpon>Set.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,7 +175,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Monsters.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Monsters.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -356,6 +369,307 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop_240330_0936_1-Photoroom.png-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop_240330_0937-Photoroom.png-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Astral Stalker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phane.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarrasque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\AssasinFemale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\AssasinMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\SummonerFemale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\SummonerMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WarriorFemale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WarriorMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WizardFemale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WizardMale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\AssasinFemale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\AssasinMale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\SummonerFemale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\SummonerMale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WarriorFemale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WarriorMale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WizardFemale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WizardMale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\AssasinFemale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\AssasinMale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\SummonerFemale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\SummonerMale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WarriorFemale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WarriorMale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WizardFemale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIN\WizardMale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AsM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy\Enemy191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enemy23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun-shapes-a-place-only-we-know-instrumental-2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neizvesten-daydreams-and-heartaches-by-odd-things.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghillie-dhu-the-scottish-highlands-instrumental.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domitori-taranofu-moments-of-the-past.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domitori-taranofu-sakuras-life.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttrruutthh-strength-surrounds-instrumental.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sun-shapes-a-place-only-we-know-instrumental-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttrruutthh-strength-surrounds-instrumental.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domitori-taranofu-sakuras-life.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neizvesten-daydreams-and-heartaches-by-odd-things.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\domitori-taranofu-moments-of-the-past.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ghillie-dhu-the-scottish-highlands-instrumental.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

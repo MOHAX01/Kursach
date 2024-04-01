@@ -242,7 +242,8 @@ namespace MathGen
                     if (num2 != 0)
                         return num1 / num2;
                     else
-                        throw new ArgumentException("Деление на ноль");
+                        //throw new ArgumentException("Деление на ноль");
+                        return num1 / (num2 + 1);
                 default:
                     throw new ArgumentException("Некорректная операция");
             }
