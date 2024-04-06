@@ -27,13 +27,10 @@ namespace Monitor
             InitializeComponent();
             DataBase.FlagSetting = 1;
             panel2.BackgroundImage = ((Image)(resources.GetObject(DataBase.PicCharapter)));
-            //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
             pictureBox2.Visible= false;
             string m = Convert.ToString(random.Next(1, 35));
             panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
             DataBase.Timer();
-            //pictureBox3.Image = Image.FromFile(DataBase.PicCharapter);
-            //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
             label1.Text = Convert.ToString(DataBase.HPCharacter);
             label2.Text = Convert.ToString(DataBase.HPEnemy);
             timer1 = new Timer();
@@ -46,7 +43,7 @@ namespace Monitor
             if (Convert.ToInt32(label1.Text) > 0)
             {
                 ChangeBackground();
-                chlen();
+                Starter();
             }
 
 
@@ -100,7 +97,7 @@ namespace Monitor
             pictureBox3 = null;
         }
 
-        public void chlen()
+        public void Starter()
         {
             DataBase.FlagButton = 1;
             if ( DataBase.HPCharacter > 0 )
@@ -159,8 +156,6 @@ namespace Monitor
                 button3.Update();
                 button3.Refresh();
 
-                //this.BackgroundImage = Image.FromFile(DataBase.BackHard3);
-
                 label4.Text = "Score: " + Convert.ToString(DataBase.Score);
             }
             else 
@@ -170,8 +165,6 @@ namespace Monitor
                     statusValue = 3;
                     DataBase.FlagButton = 0;
                     progressBar2.Value = 0;
-                    //ChangeBackground();
-                    //chlen();
                 }
                 else
                 {
@@ -195,40 +188,28 @@ namespace Monitor
                 switch (v)
                 {
                     case 1:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy1)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 2:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy2);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy2)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 3:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy3);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy3)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 4:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackEasy4);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy4)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
@@ -243,50 +224,35 @@ namespace Monitor
                 switch (v)
                 {
                     case 1:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm1)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 2:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm2);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm2)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 3:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm3);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm3)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 4:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm4);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm4)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 5:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackNorm5);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm5)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
@@ -301,60 +267,42 @@ namespace Monitor
                 switch (v)
                 {
                     case 1:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard1);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard1)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 2:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard2);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard2)));
-                        // pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 3:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard3);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard3)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 4:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard4);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard4)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 5:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard5);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard5)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
                         progressBar2.Value = 100;
                         break;
                     case 6:
-                        //this.BackgroundImage = Image.FromFile(DataBase.BackHard6);
                         this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard6)));
-                        //pictureBox2.Image = Image.FromFile(DataBase.SelectEnemy());
-                        //pictureBox2.Image = ((Image)(resources.GetObject(DataBase.SelectEnemy())));
                         panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
                         label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
                         DataBase.HPEnemy = DataBase.StaticHPEnemy;
@@ -380,10 +328,7 @@ namespace Monitor
                     }
                     else
                     {
-                        //statusValue = 3;
                         progressBar2.Value = 0;
-                        //ChangeBackground();
-                        //chlen();
                     }
                 }
                 else
@@ -398,12 +343,9 @@ namespace Monitor
                     {
                         timer1.Stop();
                         this.Close();
-                        //Game_result win = new Game_result();
-                        //win.WindowState = this.WindowState;
-                        //win.Show();
                     }
                 }
-                chlen();
+                Starter();
             }
             
         }
@@ -423,10 +365,7 @@ namespace Monitor
                     }
                     else
                     {
-                        //statusValue = 3;
                         progressBar2.Value = 0;
-                        //ChangeBackground();
-                        //chlen();
                     }
                 }
                 else
@@ -441,12 +380,9 @@ namespace Monitor
                     {
                         timer1.Stop();
                         this.Close();
-                        //Game_result win = new Game_result();
-                        //win.WindowState = this.WindowState;
-                        //win.Show();
                     }
                 }
-                chlen();
+                Starter();
             }
         }
 
@@ -465,10 +401,7 @@ namespace Monitor
                     }
                     else
                     {
-                        //statusValue = 3;
                         progressBar2.Value = 0;
-                        //ChangeBackground();
-                        //chlen();
                     }
                 }
                 else
@@ -483,13 +416,10 @@ namespace Monitor
                     {
                         timer1.Stop();
                         this.Close();
-                        //Game_result win = new Game_result();
-                        //win.WindowState = this.WindowState;
-                        //win.Show();
                     }
                 }
 
-                chlen();
+                Starter();
             }
         }
 
@@ -512,11 +442,8 @@ namespace Monitor
                 {
                     timer1.Stop();
                     this.Close();
-                    //Game_result win = new Game_result();
-                    //win.WindowState = this.WindowState;
-                    //win.Show();
                 }
-                chlen();
+                Starter();
             }
         }
 
@@ -536,7 +463,6 @@ namespace Monitor
                 {
                     if (statusValue != 0)
                     {
-                        //timer1.Stop();
                         pictureBox8.Image = (Image)(resources.GetObject("Win"));
                         statusValue--;
                     }
@@ -554,9 +480,6 @@ namespace Monitor
                         {
                             timer1.Stop();
                             this.Close();
-                            //Game_result win = new Game_result();
-                            //win.WindowState = this.WindowState;
-                            //win.Show();
                         }
                         
                     }
@@ -564,7 +487,7 @@ namespace Monitor
                     {
                         pictureBox8.Image = null;
                         ChangeBackground();
-                        chlen();
+                        Starter();
                     }
                 }
                 if (DataBase.HPCharacter < 0)
@@ -574,64 +497,10 @@ namespace Monitor
             }
             else timer1.Stop();
         }
-
-        //private void button5_Click(object sender, EventArgs e)
-        //{
-        //    panel1.Visible= false;
-        //    DataBase.FlagSetting = 1;
-        //    //timer1.Start();
-        //}
-
-        //private void button5_MouseEnter(object sender, EventArgs e)
-        //{
-        //    button5.BackgroundImage = ((Image)(resources.GetObject("ON")));
-        //}
-
-        //private void button5_MouseLeave(object sender, EventArgs e)
-        //{
-        //    button5.BackgroundImage = ((Image)(resources.GetObject("OFF")));
-        //}
-
-        //private void button6_Click(object sender, EventArgs e)
-        //{
-        //    panel1.Visible = false;
-        //    timer1.Stop();
-        //    Menu Window = new Menu();
-        //    Window.WindowState = this.WindowState;
-        //    Window.Show();
-        //    this.Close();
-        //}
-
-        //private void button6_MouseEnter(object sender, EventArgs e)
-        //{
-        //    button6.BackgroundImage = ((Image)(resources.GetObject("ON")));
-        //}
-
-        //private void button6_MouseLeave(object sender, EventArgs e)
-        //{
-        //    button6.BackgroundImage = ((Image)(resources.GetObject("OFF")));
-        //}
-
-        //private void button7_Click(object sender, EventArgs e)
-        //{
-        //    Application.Exit();
-        //}
-
-        //private void button7_MouseEnter(object sender, EventArgs e)
-        //{
-        //    button7.BackgroundImage = ((Image)(resources.GetObject("ON")));
-        //}
-
-        //private void button7_MouseLeave(object sender, EventArgs e)
-        //{
-        //    button7.BackgroundImage = ((Image)(resources.GetObject("OFF")));
-        //}
-
         private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 

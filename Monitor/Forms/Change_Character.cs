@@ -89,7 +89,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -103,7 +103,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -117,7 +117,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -131,7 +131,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -150,7 +150,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -164,7 +164,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -178,7 +178,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -192,7 +192,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -206,7 +206,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -220,7 +220,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -234,7 +234,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }
@@ -248,7 +248,7 @@ namespace Monitor.Forms
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
-            Window.chlen();
+            Window.Starter();
             Window.ChangeBackground();
             DataBase.Score = 0;
         }

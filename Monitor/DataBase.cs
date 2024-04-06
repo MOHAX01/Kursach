@@ -16,61 +16,74 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 namespace Monitor
 {
 
+    public class Music
+    {
+        private SoundPlayer[] players;
+        private int currentSongIndex;
+
+        public void Play()
+        {
+            InitializePlayers();
+            currentSongIndex = 0;
+            PlayNextSong();
+
+        }
+        private void InitializePlayers()
+        {
+            players = new SoundPlayer[6];
+            players[0] = new SoundPlayer(BasePic.domitori_taranofu_moments_of_the_past);
+            
+            players[1] = new SoundPlayer(BasePic.domitori_taranofu_sakuras_life);
+            players[2] = new SoundPlayer(BasePic.ghillie_dhu_the_scottish_highlands_instrumental);
+            players[3] = new SoundPlayer(BasePic.neizvesten_daydreams_and_heartaches_by_odd_things);
+            players[4] = new SoundPlayer(BasePic.sun_shapes_a_place_only_we_know_instrumental_2);
+            players[5] = new SoundPlayer(BasePic.ttrruutthh_strength_surrounds_instrumental);
+        }
+        private void PlayNextSong()
+        {
+
+            if (currentSongIndex >= players.Length)
+            {
+                currentSongIndex = 0;
+            }
+            players[currentSongIndex].Play();
+
+            currentSongIndex++;
+        }
+    }
+
     //public class Music
     //{
-    //    private SoundPlayer[] players;
-    //    private int currentSongIndex;
-
+    //    public WindowsMediaPlayer[] player;
+    //    //public MediaPlayer[] player;
+    //    public int currentSongIndex;
     //    public void Play()
     //    {
     //        InitializePlayers();
     //        currentSongIndex = 0;
-    //        PlayNextSong();
+    //        //PlayNextSong();
+
 
     //    }
     //    private void InitializePlayers()
     //    {
-    //        players = new SoundPlayer[6];
-    //        players[0] = new SoundPlayer(BasePic.domitori_taranofu_moments_of_the_past);
-    //        players[1] = new SoundPlayer(BasePic.domitori_taranofu_sakuras_life);
-    //        players[2] = new SoundPlayer(BasePic.ghillie_dhu_the_scottish_highlands_instrumental);
-    //        players[3] = new SoundPlayer(BasePic.neizvesten_daydreams_and_heartaches_by_odd_things);
-    //        players[4] = new SoundPlayer(BasePic.sun_shapes_a_place_only_we_know_instrumental_2);
-    //        players[5] = new SoundPlayer(BasePic.ttrruutthh_strength_surrounds_instrumental);
-    //    }
-    //    private void PlayNextSong()
-    //    {
+    //        //player = new MediaPlayer[1];
+    //        //player[0] = new MediaPlayer();
+    //        //player[0].Open(new Uri("Kursach:///domitori_taranofu_moments_of_the_past.wav"));
+    //        ////player[0].Volume = 30 / 100.0f;
+    //        //player[0].Play();
 
-    //        if (currentSongIndex >= players.Length)
-    //        {
-    //            currentSongIndex = 0;
-    //        }
-    //        players[currentSongIndex].Play();
-
-    //        currentSongIndex++;
+    //        player = new WindowsMediaPlayer[1];
+    //        player[0] = new WindowsMediaPlayer();
+    //        string path = "MP1";
+    //        File.WriteAllBytes(path, BasePic.MP1);
+    //        //player[0].URL = new Uri("Kursach:///domitori_taranofu_moments_of_the_past.wav").AbsoluteUri;
+    //        player[0].settings.baseURL = (new Uri("Kursach:///domitori_taranofu_moments_of_the_past.wav").AbsoluteUri);
+    //        player[0].controls.play();
+    //        player[0].settings.volume = 50;
     //    }
     //}
-
-    public class Music
-    {
-        public MediaPlayer[] player;
-        public int currentSongIndex;
-        public void Play()
-        {
-            //InitializePlayers();
-            //currentSongIndex = 0;
-            //PlayNextSong();
-            
-
-        }
-        //private void InitializePlayers()
-        //{
-        //    player = new MediaPlayer[6];
-        //    player[0] = new MediaPlayer();
-        //    player[0].
-        //}
-    }
-
+    //"C:\All programms\VisualStudio\Projects\Kursach\domitori-taranofu-moments-of-the-past.mp3"
 
 
 
@@ -130,37 +143,16 @@ namespace Monitor
 
         #region Backgrounds
 
-        ///   Easy
-        //public static string BackEasy1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy1.jpg";
-        //public static string BackEasy2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy2.jpg";
-        //public static string BackEasy3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy3.jpg";
-        //public static string BackEasy4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Easy\\Easy4.jpg";
-
         public static string BackEasy1 = "Easy1";
         public static string BackEasy2 = "Easy2";
         public static string BackEasy3 = "Easy3";
         public static string BackEasy4 = "Easy4";
-
-        /// Noramal
-        //public static string BackNorm1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal1.png";
-        //public static string BackNorm2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal2.png";
-        //public static string BackNorm3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal3.png";
-        //public static string BackNorm4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal4.png";
-        //public static string BackNorm5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Normal\\Normal5.png";
 
         public static string BackNorm1 = "Normal1";
         public static string BackNorm2 = "Normal2";
         public static string BackNorm3 = "Normal3";
         public static string BackNorm4 = "Normal4";
         public static string BackNorm5 = "Normal5";
-
-        /// Hard
-        //public static string BackHard1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard1.jpg";
-        //public static string BackHard2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard2.jpg";
-        //public static string BackHard3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard3.jpg";
-        //public static string BackHard4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard4.jpg";
-        //public static string BackHard5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard5.jpg";
-        //public static string BackHard6 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Hard\\Hard6.jpg";
 
         public static string BackHard1 = "Hard1";
         public static string BackHard2 = "Hard2";
@@ -208,7 +200,7 @@ namespace Monitor
                 AttackEnemy = 30;
             }
         }
-        //public static string PicWarrior = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Warrior.png";
+       
 
         public static string PicWarrior = "Warrior";
 
@@ -246,7 +238,7 @@ namespace Monitor
                 AttackEnemy = 35;
             }
         }
-        //public static string PicAssasin = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Assasin.png";
+
 
         public static string PicAssasin = "Assasin";
 
@@ -284,7 +276,6 @@ namespace Monitor
                 AttackEnemy = 20;
             }
         }
-        //public static string PicWizzard = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\Wizzard.png";
 
         public static string PicWizzard = "Wizzard";
 
@@ -323,7 +314,6 @@ namespace Monitor
                 AttackEnemy = 25;
             }
         }
-        //public static string PicNone = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Main_Chapter\\None.png";
 
         public static string PicNone = "None";
 
@@ -345,29 +335,6 @@ namespace Monitor
         public static int AttackEnemy;
         public static int KillEnemy;
         /// Pics
-        //public static string PicEnemy1 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy1.png";
-        //public static string PicEnemy2 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy2.png";
-        //public static string PicEnemy3 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy3.png";
-        //public static string PicEnemy4 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy4.png";
-        //public static string PicEnemy5 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy5.png";
-        //public static string PicEnemy6 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy6.png";
-        //public static string PicEnemy7 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy7.png";
-        //public static string PicEnemy8 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy8.png";
-        //public static string PicEnemy9 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy9.png";
-        //public static string PicEnemy10 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy10.png";
-        //public static string PicEnemy11 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy11.png";
-        //public static string PicEnemy12 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy12.png";
-        //public static string PicEnemy13 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy13.png";
-        //public static string PicEnemy14 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy14.png";
-        //public static string PicEnemy15 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy15.png";
-        //public static string PicEnemy16 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy16.png";
-        //public static string PicEnemy17 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy17.png";
-        //public static string PicEnemy18 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy18.png";
-        //public static string PicEnemy19 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy19.png";
-        //public static string PicEnemy20 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy20.png";
-        //public static string PicEnemy21 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy21.png";
-        //public static string PicEnemy22 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy22.png";
-        //public static string PicEnemy23 = "C:\\All programms\\VisualStudio\\Projects\\Kursach\\Monitor\\Resources\\Enemy\\Enemy23.png";
 
         public static string PicEnemy1 = "Enemy1";
         public static string PicEnemy2 = "Enemy2";

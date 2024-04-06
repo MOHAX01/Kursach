@@ -25,24 +25,16 @@ namespace Monitor
             InitializeComponent();
             Animator.Start();
             
-            
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
 
-            //Form1 Window = new Form1();
-            //Window.Show();
-
             Change_Dif Window = new Change_Dif();
             Window.WindowState = this.WindowState;
            
-            Window.ShowDialog();
-            
-            //Application.Run(new Form1());
+            Window.ShowDialog();            
         }
 
         private void button3_Click(object sender, EventArgs e)
