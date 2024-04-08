@@ -20,12 +20,17 @@ namespace Monitor.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
 
             Menu menuWindow = new Menu();
             menuWindow.WindowState = this.WindowState;
             menuWindow.Show();
             
+        }
+
+        private void Game_result_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

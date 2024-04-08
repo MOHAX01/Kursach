@@ -85,7 +85,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderWarrior,1);
             DataBase.Warrior();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -99,7 +99,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderAssasin,2);
             DataBase.Assasin();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -113,7 +113,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderWizard,3);
             DataBase.Wizard();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -127,7 +127,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderSummoner,4);
             DataBase.None();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -146,7 +146,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderWarrior, 1); ;
             DataBase.Warrior();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -160,7 +160,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderAssasin, 2);
             DataBase.Assasin();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -174,7 +174,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderWizard,3);
             DataBase.Wizard();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -188,7 +188,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderSummoner, 4);
             DataBase.None();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -202,7 +202,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderWarrior, 1); ;
             DataBase.Warrior();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -216,7 +216,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderAssasin, 2);
             DataBase.Assasin();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -230,7 +230,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderWizard, 3);
             DataBase.Wizard();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -244,7 +244,7 @@ namespace Monitor.Forms
             DataBase.PicCharapter = DataBase.ChangePerson(GenderSummoner, 4);
             DataBase.None();
 
-            this.Close();
+            this.Hide();
             MainGame Window = new MainGame();
             Window.WindowState = this.WindowState;
             Window.Show();
@@ -299,6 +299,11 @@ namespace Monitor.Forms
         {
             pictureBox4.Image = ((Image)(resources.GetObject("SummonerFemale")));
             GenderSummoner = 0;
+        }
+
+        private void Change_Character_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

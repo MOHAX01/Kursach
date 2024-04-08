@@ -22,7 +22,7 @@ namespace Monitor
         private void card1_Click(object sender, EventArgs e)
         {
             DataBase.Dificult = 1;
-            this.Close();
+            this.Hide();
 
             Change_Character window = new Change_Character();
             window.WindowState = this.WindowState;
@@ -33,7 +33,7 @@ namespace Monitor
         private void card2_Click(object sender, EventArgs e)
         {
             DataBase.Dificult = 2; 
-            this.Close();
+            this.Hide();
 
             Change_Character window = new Change_Character();
             window.WindowState = this.WindowState;
@@ -44,7 +44,7 @@ namespace Monitor
         private void card3_Click(object sender, EventArgs e)
         {
             DataBase.Dificult = 3;
-            this.Close();
+            this.Hide();
 
             Change_Character window = new Change_Character();
             window.WindowState = this.WindowState;
@@ -55,6 +55,16 @@ namespace Monitor
         private void Change_Dif_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Change_Dif_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Change_Dif_Deactivate(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

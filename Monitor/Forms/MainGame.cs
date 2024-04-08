@@ -64,7 +64,7 @@ namespace Monitor
             {
                 Menu win = new Menu();
                 win.Show();
-                this.Close();
+                this.Hide();
             }
             else
             {
@@ -168,8 +168,9 @@ namespace Monitor
                 }
                 else
                 {
+                    DataBase.FlagSetting = 0;
                     timer1.Stop();
-                    this.Close();
+                    this.Hide();
                     Game_result win = new Game_result();
                     win.WindowState = this.WindowState;
                     win.Show();
@@ -342,7 +343,7 @@ namespace Monitor
                     else
                     {
                         timer1.Stop();
-                        this.Close();
+                        //this.Close();
                     }
                 }
                 Starter();
@@ -379,7 +380,7 @@ namespace Monitor
                     else
                     {
                         timer1.Stop();
-                        this.Close();
+                        //this.Close();
                     }
                 }
                 Starter();
@@ -415,7 +416,7 @@ namespace Monitor
                     else
                     {
                         timer1.Stop();
-                        this.Close();
+                        //this.Close();
                     }
                 }
 
@@ -441,7 +442,7 @@ namespace Monitor
                 else
                 {
                     timer1.Stop();
-                    this.Close();
+                    //this.Close();
                 }
                 Starter();
             }
@@ -479,7 +480,7 @@ namespace Monitor
                         else
                         {
                             timer1.Stop();
-                            this.Close();
+                            //this.Close();
                         }
                         
                     }
@@ -504,6 +505,11 @@ namespace Monitor
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainGame_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
