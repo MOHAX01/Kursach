@@ -24,10 +24,14 @@ namespace Monitor
             DataBase.Dificult = 1;
             this.Hide();
 
-            Change_Character window = new Change_Character();
-            window.WindowState = this.WindowState;
-            window.Show();
-            window.Star_Label();
+            Hero win = new Hero();
+            win.WindowState = this.WindowState;
+            win.Show();
+
+            //Change_Character window = new Change_Character();
+            //window.WindowState = this.WindowState;
+            //window.Show();
+            //window.Star_Label();
         }
 
         private void card2_Click(object sender, EventArgs e)
@@ -35,10 +39,14 @@ namespace Monitor
             DataBase.Dificult = 2; 
             this.Hide();
 
-            Change_Character window = new Change_Character();
-            window.WindowState = this.WindowState;
-            window.Show();
-            window.Star_Label();
+            Hero win = new Hero();
+            win.WindowState = this.WindowState;
+            win.Show();
+
+            //Change_Character window = new Change_Character();
+            //window.WindowState = this.WindowState;
+            //window.Show();
+            //window.Star_Label();
         }
 
         private void card3_Click(object sender, EventArgs e)
@@ -46,10 +54,14 @@ namespace Monitor
             DataBase.Dificult = 3;
             this.Hide();
 
-            Change_Character window = new Change_Character();
-            window.WindowState = this.WindowState;
-            window.Show();
-            window.Star_Label();
+            Hero win = new Hero();
+            win.WindowState = this.WindowState;
+            win.Show();
+
+            //Change_Character window = new Change_Character();
+            //window.WindowState = this.WindowState;
+            //window.Show();
+            //window.Star_Label();
         }
 
         private void Change_Dif_Load(object sender, EventArgs e)
