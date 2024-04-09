@@ -41,10 +41,11 @@
             // 
             this.trackBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.trackBar1.BackColor = System.Drawing.Color.Gainsboro;
-            this.trackBar1.Location = new System.Drawing.Point(240, 134);
+            this.trackBar1.Location = new System.Drawing.Point(313, 165);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(207, 45);
+            this.trackBar1.Size = new System.Drawing.Size(276, 56);
             this.trackBar1.TabIndex = 0;
             this.trackBar1.Value = 10;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
@@ -56,9 +57,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(234, 91);
+            this.label1.Location = new System.Drawing.Point(312, 112);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 31);
+            this.label1.Size = new System.Drawing.Size(134, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Music:";
             // 
@@ -70,9 +72,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(30, 26);
+            this.button5.Location = new System.Drawing.Point(40, 32);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(165, 63);
+            this.button5.Size = new System.Drawing.Size(220, 78);
             this.button5.TabIndex = 5;
             this.button5.Text = "Continue";
             this.button5.UseVisualStyleBackColor = false;
@@ -88,9 +91,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(30, 121);
+            this.button6.Location = new System.Drawing.Point(40, 149);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(165, 67);
+            this.button6.Size = new System.Drawing.Size(220, 82);
             this.button6.TabIndex = 6;
             this.button6.Text = "Main Menu";
             this.button6.UseVisualStyleBackColor = false;
@@ -106,9 +110,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(30, 214);
+            this.button7.Location = new System.Drawing.Point(40, 263);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(165, 67);
+            this.button7.Size = new System.Drawing.Size(220, 82);
             this.button7.TabIndex = 7;
             this.button7.Text = "Exit";
             this.button7.UseVisualStyleBackColor = false;
@@ -118,11 +123,11 @@
             // 
             // Set
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(469, 312);
+            this.ClientSize = new System.Drawing.Size(625, 384);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -130,6 +135,7 @@
             this.Controls.Add(this.trackBar1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Set";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";

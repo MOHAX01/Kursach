@@ -15,6 +15,66 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Monitor
 {
+    public class Heros
+    {
+        public string NameHero;
+        public string NamePicM;
+        public string NamePicF;
+        public int AttackHero;
+        public int StaticHpHero;
+        public int HpHero;
+        public string Info;
+
+        public Heros(string Name, string PicM, string PicF, int Attack, int HP, int StaticHP, string Info)
+        {
+            this.NameHero = Name;
+            this.NamePicM = PicM;
+            this.NamePicF = PicF;
+            this.AttackHero = Attack;
+            this.StaticHpHero = HP;
+            this.HpHero = StaticHP;
+            this.Info = Info;
+        }
+
+    }
+
+    public class Person
+    {
+        public static Heros[] person;
+        public static int Dificult = DataBase.Dificult;
+
+        public static void Proc()
+        {
+            switch (Dificult)
+            {
+                case 1:
+                    {
+                        person[0] = new Heros("Рыцарь", "WarM", "WarF", 10, 200, 200, "");
+                        person[1] = new Heros("Вор", "AsM", "AsF", 15, 160, 160, "");
+                        person[2] = new Heros("Маг", "WizM", "WizF", 20, 120, 120, "");
+                        person[3] = new Heros("Призыватель", "SM", "SF", 25, 130, 130, "");
+                        break;
+                    }
+                case 2:
+                    {
+                        person[0] = new Heros("Рыцарь", "WarM", "WarF", 15, 150, 150, "");
+                        person[1] = new Heros("Вор", "AsM", "AsF", 20, 120, 120, "");
+                        person[2] = new Heros("Маг", "WizM", "WizF", 30, 90, 90, "");
+                        person[3] = new Heros("Призыватель", "SM", "SF", 40, 100, 100, "");
+                        break;
+                    }
+                case 3:
+                    {
+                        person[0] = new Heros("Рыцарь", "WarM", "WarF", 20, 100, 100, "");
+                        person[1] = new Heros("Вор", "AsM", "AsF", 30, 80, 80, "");
+                        person[2] = new Heros("Маг", "WizM", "WizF", 40, 60, 60, "");
+                        person[3] = new Heros("Призыватель", "SM", "SF", 60, 70, 70, "");
+                        break;
+                    }
+            }
+        }
+    }
+
 
     public class Music
     {
@@ -32,7 +92,7 @@ namespace Monitor
         {
             players = new SoundPlayer[6];
             players[0] = new SoundPlayer(BasePic.domitori_taranofu_moments_of_the_past);
-            
+
             players[1] = new SoundPlayer(BasePic.domitori_taranofu_sakuras_life);
             players[2] = new SoundPlayer(BasePic.ghillie_dhu_the_scottish_highlands_instrumental);
             players[3] = new SoundPlayer(BasePic.neizvesten_daydreams_and_heartaches_by_odd_things);
@@ -84,9 +144,6 @@ namespace Monitor
     //    }
     //}
     //"C:\All programms\VisualStudio\Projects\Kursach\domitori-taranofu-moments-of-the-past.mp3"
-
-
-
 
 
     static class DataBase
@@ -326,6 +383,10 @@ namespace Monitor
         public static int AttackCharacter;
         public static int Heal = Convert.ToInt32(HPCharacter * 0.25);
         public static string PicCharapter;
+
+
+        
+
         #endregion
 
         #region Enemy

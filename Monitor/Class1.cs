@@ -97,8 +97,10 @@ namespace MathGen
 
             //double userAnswer;
             correctAnswer = CalculateAnswerWithPriority(num1, num2, num3, num4, operation1, operation2, operation3, flag);
-            InCorrectAnswer1 = random.Next(Convert.ToInt32(correctAnswer) + 2, Convert.ToInt32(correctAnswer) + 10);
-            InCorrectAnswer2 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) - 2);
+            InCorrectAnswer1 = random.Next(Convert.ToInt32(correctAnswer) - 15, Convert.ToInt32(correctAnswer) + 15);
+            if(InCorrectAnswer1 == correctAnswer) InCorrectAnswer1 = random.Next(Convert.ToInt32(correctAnswer) - 15, Convert.ToInt32(correctAnswer) + 15);
+            InCorrectAnswer2 = random.Next(Convert.ToInt32(correctAnswer) - 15, Convert.ToInt32(correctAnswer) + 15);
+            if(InCorrectAnswer2 == correctAnswer || InCorrectAnswer2 == InCorrectAnswer1) InCorrectAnswer2 = random.Next(Convert.ToInt32(correctAnswer) - 15, Convert.ToInt32(correctAnswer) + 15);
 
             //if (double.TryParse(Console.ReadLine(), out userAnswer))
             //{
