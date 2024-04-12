@@ -185,7 +185,7 @@ namespace Monitor
             if (DataBase.Dificult == 1)
             {
                 int v = random.Next(0, 4);
-                string m = Convert.ToString(random.Next(1, 34));
+                string m = Convert.ToString(random.Next(1, 35));
                 switch (v)
                 {
                     case 1:
