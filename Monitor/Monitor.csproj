@@ -679,5 +679,44 @@
   <ItemGroup>
     <None Include="Resources\ghillie-dhu-the-scottish-highlands-instrumental.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_28819271_601.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_28819333_712.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_28819363_774.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_28819400_856.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Этот герой родом из .mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Этот герой родом из .wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Этот герой вырос в б.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Этот герой родился с.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Этот герой родом из  %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Эта героиня родом из.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Эта героиня выросла .wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Эта героиня родилась.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Эта героиня родом из %281%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

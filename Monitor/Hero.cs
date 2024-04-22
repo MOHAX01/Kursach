@@ -111,5 +111,10 @@ namespace Monitor
             pictureBox1.Image = ((Image)(resources.GetObject(Pic)));
             label2.Text= info;
         }
+
+        private void Hero_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

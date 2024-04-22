@@ -21,10 +21,6 @@ namespace Monitor.Forms
         public Set()
         {
             InitializeComponent();
-            trackBar1.Minimum = 0;
-            trackBar1.Maximum = 100;
-            trackBar1.ValueChanged += trackBar1_ValueChanged;
-            trackBar1.Value = DataBase.Volue;
             DataBase.FlagClose = 0;
 
 
@@ -53,10 +49,7 @@ namespace Monitor.Forms
 
         }      
 
-        private void trackBar1_ValueChanged(object sender, EventArgs e)
-        {
-           //DataBase.Value(trackBar1.Value);
-        }
+
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {

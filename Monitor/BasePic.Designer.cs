@@ -83,16 +83,6 @@ namespace Monitor {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Assasin {
-            get {
-                object obj = ResourceManager.GetObject("Assasin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap AssasinFemale {
             get {
                 object obj = ResourceManager.GetObject("AssasinFemale", resourceCulture);
@@ -106,6 +96,156 @@ namespace Monitor {
         public static System.Drawing.Bitmap AssasinMale {
             get {
                 object obj = ResourceManager.GetObject("AssasinMale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back1 {
+            get {
+                object obj = ResourceManager.GetObject("Back1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back10 {
+            get {
+                object obj = ResourceManager.GetObject("Back10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back11 {
+            get {
+                object obj = ResourceManager.GetObject("Back11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back12 {
+            get {
+                object obj = ResourceManager.GetObject("Back12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back13 {
+            get {
+                object obj = ResourceManager.GetObject("Back13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back14 {
+            get {
+                object obj = ResourceManager.GetObject("Back14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back15 {
+            get {
+                object obj = ResourceManager.GetObject("Back15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back2 {
+            get {
+                object obj = ResourceManager.GetObject("Back2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back3 {
+            get {
+                object obj = ResourceManager.GetObject("Back3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back4 {
+            get {
+                object obj = ResourceManager.GetObject("Back4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back5 {
+            get {
+                object obj = ResourceManager.GetObject("Back5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back6 {
+            get {
+                object obj = ResourceManager.GetObject("Back6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back7 {
+            get {
+                object obj = ResourceManager.GetObject("Back7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back8 {
+            get {
+                object obj = ResourceManager.GetObject("Back8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Back9 {
+            get {
+                object obj = ResourceManager.GetObject("Back9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,46 +265,6 @@ namespace Monitor {
         public static System.IO.UnmanagedMemoryStream domitori_taranofu_sakuras_life {
             get {
                 return ResourceManager.GetStream("domitori_taranofu_sakuras_life", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Easy1 {
-            get {
-                object obj = ResourceManager.GetObject("Easy1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Easy2 {
-            get {
-                object obj = ResourceManager.GetObject("Easy2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Easy3 {
-            get {
-                object obj = ResourceManager.GetObject("Easy3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Easy4 {
-            get {
-                object obj = ResourceManager.GetObject("Easy4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -520,127 +620,10 @@ namespace Monitor {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Hard1 {
-            get {
-                object obj = ResourceManager.GetObject("Hard1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Hard2 {
-            get {
-                object obj = ResourceManager.GetObject("Hard2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Hard3 {
-            get {
-                object obj = ResourceManager.GetObject("Hard3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Hard4 {
-            get {
-                object obj = ResourceManager.GetObject("Hard4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Hard5 {
-            get {
-                object obj = ResourceManager.GetObject("Hard5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Hard6 {
-            get {
-                object obj = ResourceManager.GetObject("Hard6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap Lose {
             get {
                 object obj = ResourceManager.GetObject("Lose", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
-        /// </summary>
-        public static byte[] MP1 {
-            get {
-                object obj = ResourceManager.GetObject("MP1", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на ID3#TSSELavf58.45.100яыаInfoўЃ!#        ///!$&amp;),.1368;=@BEGJLOQTXZ]_bdgilnqsvx{}Ђѓ…€ЉЌЏ’”—™њћЎЈ¦Ё«Ї±ґ¶№»ѕАГЕИКНПТФЧЪЬЯбджйлорухшъэLavfЃ!#Ш8Е [остаток строки не уместился]&quot;;.
-        /// </summary>
-        public static string MP2 {
-            get {
-                return ResourceManager.GetString("MP2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на ID3#TSSELavf58.45.100яыРXingH-I
-        /// #%(*,/1469&lt;&gt;@CFIKNQSUX[^acfikmpruxz}Ѓ„†‰‹Ћ‘“•љќ ўҐ§©¬Ї±ґ·№јїБДЖЙМОСФЦЩЫЮбгжйлнрухшыэLavf-I›Ж,i [остаток строки не уместился]&quot;;.
-        /// </summary>
-        public static string MP3 {
-            get {
-                return ResourceManager.GetString("MP3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на ID3#TSSELavf58.45.100яыаInfoҐЃ-Ћ        ///!$&amp;),.1368;=@BEGJLOQTWZ]_bdgilnqsvx{}Ђѓ…€ЉЌЏ’”—™њћЎЈ¦Ё«®°ґ¶№»ѕАГЕИКНПТФЧЪЬЯбджйлорухшъэLavfЃ-Ћ9ћ\ [остаток строки не уместился]&quot;;.
-        /// </summary>
-        public static string MP4 {
-            get {
-                return ResourceManager.GetString("MP4", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на ID3#TSSELavf58.45.100яыФXingЎ6NE	&quot;$&apos;*-0257;=@CFHKNQSVZ\_aegiknpsuy{~Ђ„‡‰ЊЏ’”—™њћЎЈ¦Ё«­±ґ¶єјїБДЗКМПТХЧЪЬЯвдзймосуцшыэююяLavf6NE?ЯP№ [остаток строки не уместился]&quot;;.
-        /// </summary>
-        public static string MP5 {
-            get {
-                return ResourceManager.GetString("MP5", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на ID3#TSSELavf58.45.100яыАXingџ&apos;еm
-        /// &quot;%&apos;),.0468:=?ADFHKNPSVXZ]_bdhjmpsvx|~Ѓ…‡ЉЊђ“•™›ћ ¤¦©¬Ї±µ·єјїВДЗЙЛОСУЦЩЫЮагжилнпсфцшъьэLavf&apos;еm–јФ [остаток строки не уместился]&quot;;.
-        /// </summary>
-        public static string MP6 {
-            get {
-                return ResourceManager.GetString("MP6", resourceCulture);
             }
         }
         
@@ -650,76 +633,6 @@ namespace Monitor {
         public static System.IO.UnmanagedMemoryStream neizvesten_daydreams_and_heartaches_by_odd_things {
             get {
                 return ResourceManager.GetStream("neizvesten_daydreams_and_heartaches_by_odd_things", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap None {
-            get {
-                object obj = ResourceManager.GetObject("None", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap NonePic {
-            get {
-                object obj = ResourceManager.GetObject("NonePic", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Normal1 {
-            get {
-                object obj = ResourceManager.GetObject("Normal1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Normal2 {
-            get {
-                object obj = ResourceManager.GetObject("Normal2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Normal3 {
-            get {
-                object obj = ResourceManager.GetObject("Normal3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Normal4 {
-            get {
-                object obj = ResourceManager.GetObject("Normal4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Normal5 {
-            get {
-                object obj = ResourceManager.GetObject("Normal5", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -824,16 +737,6 @@ namespace Monitor {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Warrior {
-            get {
-                object obj = ResourceManager.GetObject("Warrior", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap WarriorFemale {
             get {
                 object obj = ResourceManager.GetObject("WarriorFemale", resourceCulture);
@@ -897,16 +800,6 @@ namespace Monitor {
         public static System.Drawing.Bitmap WizM {
             get {
                 object obj = ResourceManager.GetObject("WizM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap Wizzard {
-            get {
-                object obj = ResourceManager.GetObject("Wizzard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

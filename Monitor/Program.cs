@@ -21,13 +21,13 @@ namespace Monitor
         static void Main()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasePic));
-            
+            DataBase.Play();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             //Menu menuWindow = new Menu();
             //menuWindow.Show(); 
-            DataBase.Play();
+            
             Application.Run(new Menu());
 
             

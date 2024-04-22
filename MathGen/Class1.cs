@@ -4,6 +4,10 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
+using WMPLib;
+using System.Windows.Media;
+
 
 namespace MathGen
 {
@@ -11,12 +15,10 @@ namespace MathGen
     {
         private Random random = new Random();
         public int Point;
-        ///public int dificult=1;
         public void GenerateQuiz(int dificult, out int correctAnswer, out int InCorrectAnswer1, out int InCorrectAnswer2, out string exem)
         {
-            //Console.WriteLine("Генерация математических примеров:");
             int flag;
-            exem="";
+            exem = "";
 
             int num1 = random.Next(-5, 10); // Генерация случайного числа от 1 до 10
             int num2 = random.Next(-5, 10);
@@ -51,11 +53,9 @@ namespace MathGen
             flag = 1;
 
 
-
-
             if (num2 <= -1) exem += $"{num1} {operation1} ({num2})";
             else exem += $"{num1} {operation1} {num2}";
-            
+
             if (dificult >= 2)
             {
                 if (num3 <= -1) exem += $" {operation2} ({num3})";
@@ -72,56 +72,11 @@ namespace MathGen
 
             exem += " =";
 
-
-
-
-
-            //if (num2 <= -1) Console.Write($"{num1} {operation1} ({num2})");
-            //else Console.Write($"{num1} {operation1} {num2}");
-
-            ////Добавляем дополнительные операнды и операции для более сложных примеров
-            //    if (dificult >= 2)
-            //{
-            //    if (num3 <= -1) Console.Write($" {operation2} ({num3})");
-            //    else Console.Write($" {operation2} {num3}");
-            //    flag = 2;
-            //}
-            //if (dificult == 3)
-            //{
-            //    if (num3 <= -1) Console.Write($" {operation3} ({num4})");
-            //    else Console.Write($" {operation3} {num4}");
-            //    flag = 3;
-            //}
-
-            //Console.Write(" = ");
-
-            //double userAnswer;
             correctAnswer = CalculateAnswerWithPriority(num1, num2, num3, num4, operation1, operation2, operation3, flag);
             InCorrectAnswer1 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) + 10);
-            while(InCorrectAnswer1 == correctAnswer) InCorrectAnswer1 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) + 10);
+            while (InCorrectAnswer1 == correctAnswer) InCorrectAnswer1 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) + 10);
             InCorrectAnswer2 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) + 10);
-            while( InCorrectAnswer2 == correctAnswer || InCorrectAnswer2 == InCorrectAnswer1) InCorrectAnswer2 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) + 10);
-
-            //if (double.TryParse(Console.ReadLine(), out userAnswer))
-            //{
-            //    correctAnswer = CalculateAnswerWithPriority(num1, num2, num3, num4, operation1, operation2, operation3, flag);
-            //    InCorrectAnswer1 = random.Next(Convert.ToInt32(correctAnswer) + 1, Convert.ToInt32(correctAnswer) + 10);
-            //    InCorrectAnswer2 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) - 1);
-
-            //    if (userAnswer == correctAnswer)
-            //    {
-            //        Console.WriteLine("Верно!\n");
-            //        Point += dificult;
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine($"Неверно. Правильный ответ: {correctAnswer}\n");
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Некорректный ввод. Попробуйте ещё раз.\n");
-            //}
+            while (InCorrectAnswer2 == correctAnswer || InCorrectAnswer2 == InCorrectAnswer1) InCorrectAnswer2 = random.Next(Convert.ToInt32(correctAnswer) - 10, Convert.ToInt32(correctAnswer) + 10);
         }
 
         private char GetRandomOperation(int num1, int num2)
@@ -159,15 +114,15 @@ namespace MathGen
             {
                 if (flag == 2)  //2 use
                 {
-                    if ((operation2 == '*' || operation2 == '/') && (operation1 != '*' ||  operation1 != '/'))
+                    if ((operation2 == '*' || operation2 == '/') && (operation1 != '*' || operation1 != '/'))
                     {
-                        result1=Calculate(num2, num3, operation2);
-                        result3= Calculate(num1, result1, operation1);
+                        result1 = Calculate(num2, num3, operation2);
+                        result3 = Calculate(num1, result1, operation1);
                     }
                     else
                     {
-                        result1= Calculate(num1, num2, operation1);
-                        result3= Calculate(result1, num3, operation2);
+                        result1 = Calculate(num1, num2, operation1);
+                        result3 = Calculate(result1, num3, operation2);
                     }
                 }
                 else    // 3 use
@@ -244,7 +199,8 @@ namespace MathGen
                     if (num2 != 0)
                         return num1 / num2;
                     else
-                        throw new ArgumentException("Деление на ноль");
+                        return num1 / num2+1;
+                    //throw new ArgumentException("Деление на ноль");
                 default:
                     throw new ArgumentException("Некорректная операция");
             }

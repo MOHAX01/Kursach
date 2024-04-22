@@ -124,32 +124,62 @@
   <data name="AsM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\AsM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Assasin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main_Chapter\Assasin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AssasinFemale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MAIN\AssasinFemale1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AssasinMale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MAIN\AssasinMale1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Easy\Easy1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hard\Hard6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Normal\Normal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Normal\Normal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Normal\Normal3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Normal\Normal4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Normal\Normal5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Easy\Easy2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Easy\Easy3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Easy\Easy4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hard\Hard1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hard\Hard2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hard\Hard3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hard\Hard4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hard\Hard5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="domitori_taranofu_moments_of_the_past" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\domitori-taranofu-moments-of-the-past.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="domitori_taranofu_sakuras_life" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\domitori-taranofu-sakuras-life.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Easy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Easy\Easy1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Easy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Easy\Easy2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Easy3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Easy\Easy3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Easy4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Easy\Easy4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Enemy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Enemy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,68 +286,11 @@
   <data name="ghillie_dhu_the_scottish_highlands_instrumental" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\ghillie-dhu-the-scottish-highlands-instrumental.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Hard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Hard\Hard1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hard2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Hard\Hard2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hard3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Hard\Hard3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hard4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Hard\Hard4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hard5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Hard\Hard5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hard6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Hard\Hard6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Lose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Lose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\domitori-taranofu-moments-of-the-past.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MP2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\domitori-taranofu-sakuras-life.mp3;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
-  </data>
-  <data name="MP3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\ghillie-dhu-the-scottish-highlands-instrumental.mp3;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
-  </data>
-  <data name="MP4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\neizvesten-daydreams-and-heartaches-by-odd-things.mp3;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
-  </data>
-  <data name="MP5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\sun-shapes-a-place-only-we-know-instrumental-2.mp3;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
-  </data>
-  <data name="MP6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\ttrruutthh-strength-surrounds-instrumental.mp3;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
-  </data>
   <data name="neizvesten_daydreams_and_heartaches_by_odd_things" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\neizvesten-daydreams-and-heartaches-by-odd-things.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="None" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main_Chapter\None.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NonePic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\NonePic.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Normal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Normal\Normal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Normal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Normal\Normal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Normal3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Normal\Normal3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Normal4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Normal\Normal4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Normal5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Normal\Normal5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Desktop_240330_0937-Photoroom.png-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -349,9 +322,6 @@
   <data name="WarM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\WarM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Warrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main_Chapter\Warrior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="WarriorFemale" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MAIN\WarriorFemale1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -372,8 +342,5 @@
   </data>
   <data name="WizM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\WizM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wizzard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Main_Chapter\Wizzard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

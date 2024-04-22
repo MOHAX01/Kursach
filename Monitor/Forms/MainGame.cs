@@ -182,135 +182,15 @@ namespace Monitor
 
         public void ChangeBackground()
         {
-            if (DataBase.Dificult == 1)
-            {
-                int v = random.Next(0, 4);
-                string m = Convert.ToString(random.Next(1, 35));
-                switch (v)
-                {
-                    case 1:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy1)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 2:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy2)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 3:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy3)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 4:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackEasy4)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                }
-            }
-            if (DataBase.Dificult == 2)
-            {
-                int v = random.Next(0, 5);
-                string m = Convert.ToString(random.Next(1, 35));
-                switch (v)
-                {
-                    case 1:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm1)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 2:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm2)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 3:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm3)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 4:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm4)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 5:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackNorm5)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                }
-            }
-            if (DataBase.Dificult == 3)
-            {
-                int v = random.Next(0, 6);
-                string m = Convert.ToString(random.Next(1, 35));
-                switch (v)
-                {
-                    case 1:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard1)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 2:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard2)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 3:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard3)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 4:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard4)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 5:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard5)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                    case 6:
-                        this.BackgroundImage = ((Image)(resources.GetObject(DataBase.BackHard6)));
-                        panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{m}")));
-                        label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
-                        DataBase.HPEnemy = DataBase.StaticHPEnemy;
-                        progressBar2.Value = 100;
-                        break;
-                }
-            }
+            int bac = random.Next(1, 15);
+            int enem = random.Next(1, 35);
+
+            this.BackgroundImage = ((Image)(resources.GetObject($"Back{bac}")));
+            panel3.BackgroundImage = ((Image)(resources.GetObject($"Enemy{enem}")));
+            label2.Text = Convert.ToString(DataBase.StaticHPEnemy);
+            DataBase.HPEnemy = DataBase.StaticHPEnemy;
+            progressBar2.Value = 100;
+
         }
 
 
