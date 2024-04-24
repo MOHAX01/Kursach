@@ -15,17 +15,17 @@ namespace Monitor.Forms
         public Game_result()
         {
             InitializeComponent();
-            label1.Text = "Score: " + DataBase.Score.ToString();
+            label1.Text = "Очки: " + DataBase.Score.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
 
-            Menu menuWindow = new Menu();
-            menuWindow.WindowState = this.WindowState;
-            menuWindow.Show();
-            
+            //Menu menuWindow = new Menu();
+            //menuWindow.WindowState = this.WindowState;
+            //menuWindow.Show();
+            Close();
         }
 
         private void Game_result_FormClosed(object sender, FormClosedEventArgs e)

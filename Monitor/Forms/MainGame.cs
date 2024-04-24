@@ -20,7 +20,7 @@ namespace Monitor
     public partial class MainGame : Form
     {
         public Random random = new Random();
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasePic));
+        ComponentResourceManager resources = new ComponentResourceManager(typeof(BasePic));
         public MainGame()
         {
 
@@ -156,7 +156,7 @@ namespace Monitor
                 button3.Update();
                 button3.Refresh();
 
-                label4.Text = "Score: " + Convert.ToString(DataBase.Score);
+                label4.Text = "Очки: " + Convert.ToString(DataBase.Score);
             }
             else 
             {

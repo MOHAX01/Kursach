@@ -12,7 +12,7 @@ namespace Monitor
 {
     public partial class Hero : Form
     {
-        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasePic));
+        ComponentResourceManager resources = new ComponentResourceManager(typeof(BasePic));
         public Hero()
         {
             InitializeComponent();
@@ -21,8 +21,8 @@ namespace Monitor
             pictureBox1.Image = ((Image)(resources.GetObject(Pic)));
             label1.Text = Person.person[current].NameHero;
             label2.Text = Person.person[current].InfoM;
-            label3.Text = "Hp: " + Convert.ToString(Person.person[current].HpHero);
-            label4.Text = "Attack: " + Convert.ToString(Person.person[current].AttackHero);
+            label3.Text = "Здоровье: " + Convert.ToString(Person.person[current].HpHero);
+            label4.Text = "Атака: " + Convert.ToString(Person.person[current].AttackHero);
         }
         public int current=0;
         public int gender=0;
@@ -54,8 +54,8 @@ namespace Monitor
             pictureBox1.Image = ((Image)(resources.GetObject(Pic)));
             label1.Text = Person.person[current].NameHero;
             label2.Text = info;
-            label3.Text = "Hp: " + Convert.ToString(Person.person[current].HpHero);
-            label4.Text = "Attack: " + Convert.ToString(Person.person[current].AttackHero);
+            label3.Text = "Здоровье: " + Convert.ToString(Person.person[current].HpHero);
+            label4.Text = "Атака: " + Convert.ToString(Person.person[current].AttackHero);
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -79,8 +79,8 @@ namespace Monitor
             pictureBox1.Image = ((Image)(resources.GetObject(Pic)));
             label1.Text = Person.person[current].NameHero;
             label2.Text = info;
-            label3.Text = "Hp: " + Convert.ToString(Person.person[current].HpHero);
-            label4.Text = "Attack: " + Convert.ToString(Person.person[current].AttackHero);
+            label3.Text = "Здоровье: " + Convert.ToString(Person.person[current].HpHero);
+            label4.Text = "Атака: " + Convert.ToString(Person.person[current].AttackHero);
         }
         private void button3_Click(object sender, EventArgs e)
         {
